@@ -1,0 +1,3 @@
+# Tells Jekyll some basics about this project (e.g. telling Jekyll the name of our site and what version of Markdown we'd like to use)
+name: Marc Ochsner, Human being
+markdown: kramdown
