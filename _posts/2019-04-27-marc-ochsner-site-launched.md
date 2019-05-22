@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Just an entry-level Systems Engineer launching their blog :)"
-date: 2018-04-27
+date: 2019-04-27
 ---
 
 After creating a personal blog (<a href="https://tuurtell.com">tuurtell</a>) with my best friend, I've decided to go forward with taking the time to create this site to document some of the things I'm interested in - notably software & technology. I'll still be posting on our shared tuurtell blog, so check it out if you're interested in keeping up with our personal lives; keeping in mind that we're really just posting for ourselves - make sure not to create any expectations for us!
