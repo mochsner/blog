@@ -1,9 +1,18 @@
 ---
 layout: default
-title: Marc Ochsner, Systems Developer
 ---
-		<div class="blurb">
-			<h1>Hi, I'm Marc!</h1>
-			<p>I grew up in SC & recently moved to WI with my bestfriend.</p>
-			<p>If you want to know more about our life, check <a href="https://tuurtell.com/">us out here</a>!</p>
-		</div><!-- /.blurb -->
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
