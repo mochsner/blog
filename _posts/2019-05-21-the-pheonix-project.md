@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Pheonix Project: A Novel about IT, DevOps, and Helping Your Business Win"
-date: 2018-05-21
+date: 2019-05-21
 ---
 
 Finally finished "The Pheonix Project" a little over a week ago. Although I haven't read much this year with my customer go-live in April, it was definitely the best book I've read in a while. For comparison, the other books I've read recently consist of Alice in Wonderland, The Martian, and Ready Player One... so maybe I just needed something a bit more technology-focused... who knows.
