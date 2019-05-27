@@ -3,17 +3,9 @@ name: mochsner
 plugins:
   - jekyll-html-pipeline
   - jekyll-octicons
-markdown: kramdown, HTMLPipeline
+markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-html_pipeline:
-  filters:
-    - "markdownfilter"
-    - "sanitizationfilter"
-    - "emojifilter"
-    - "mentionfilter"
-  context:
-    asset_root: "http://foo.com/icons"
-    base_url:   "https://github.com/"
+
 ## Defaults you can change
 ## The following defaults are set by GitHub, which you are free to override in your _config.yml file:
 
