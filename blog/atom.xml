@@ -1,5 +1,5 @@
 ---
-layout: feed
+layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -25,3 +25,5 @@ layout: feed
 	{% endfor %}
 
 </feed>
+
+<!-- Alternatively, use <Channel> -> https://stackoverflow.com/questions/45684522/build-warning-layout-none-requested-in-feed-xml-does-not-exist -->
