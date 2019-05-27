@@ -1,4 +1,41 @@
 # Tells Jekyll some basics about this project (e.g. telling Jekyll the name of our site and what version of Markdown we'd like to use)
-name: Marc Ochsner, Human being
-markdown: kramdown
+name: mochsner
+plugins:
+  - jekyll-html-pipeline
+  - jekyll-octicons
+markdown: kramdown, HTMLPipeline
 permalink: /blog/:year/:month/:day/:title
+html_pipeline:
+  filters:
+    - "markdownfilter"
+    - "sanitizationfilter"
+    - "emojifilter"
+    - "mentionfilter"
+  context:
+    asset_root: "http://foo.com/icons"
+    base_url:   "https://github.com/"
+## Defaults you can change
+## The following defaults are set by GitHub, which you are free to override in your _config.yml file:
+
+#  github: [metadata]
+#  encoding: UTF-8
+#  kramdown:
+#    input: GFM
+#    hard_wrap: false
+#  future: true
+#  jailed: false
+#  theme: jekyll-theme-primer
+#  gfm_quirks: paragraph_end
+# Configuration settings you cannot change
+
+## GitHub Pages & Jekyll override the following settings in your _config.yml file, which you cannot change:
+# lsi: false
+# safe: true
+# source: [your repo's top level directory]
+# incremental: false
+# highlighter: rouge
+# gist:
+#   noscript: false
+# kramdown:
+#   math_engine: mathjax
+#   syntax_highlighter: rouge
