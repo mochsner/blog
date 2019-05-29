@@ -2,7 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 # Ignore 'error' in other linters
 ---
-
+// IN PROGRESS -> Reference https://app.getpocket.com/read/2606415253
 .menu {
   // define the height of the menu
   --menu-height: 40px;
@@ -38,7 +38,7 @@
         height: 0; 
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 5px solid #FFA500;
+        border-top: 5px solid rgb(3, 3, 1);
         position: absolute;
         right: 8px;
         top: 50%;
@@ -58,7 +58,7 @@
     display: flex;
     height: var(--menu-height);
     align-items: center;
-    background-color: #000000;
+    background-color: #333;
     // the first ul elements can be a
     // link or an li with a nested ul. 
     // the nested ul will be a dropdown
@@ -95,7 +95,7 @@
             height: 0; 
             border-top: 5px solid transparent;
             border-bottom: 5px solid transparent;
-            border-left: 5px solid #FFA500;
+            border-left: 5px solid #333;
           }
           // links dont need arrow right
            li::abefore {

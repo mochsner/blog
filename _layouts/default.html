@@ -1,56 +1,55 @@
 <!DOCTYPE html>
 <html>
 
-<div class="menu">
-	<ul>
-		<a href="">
-			<li>Simple Link</li>
-		</a>
-		<a href="">
-			<li>Simple Link</li>
-		</a>
-		<li>
-			Dropdown A
-			<ul>
-				<a href="">
-					<li>Simple Link</li>
-				</a>
-				<a href="">
-					<li>Simple Link</li>
-				</a>
-				<li>
-					Dropdown B
-					<ul>
-						<a href="">
-							<li>Simple Link</li>
-						</a>
-						<a href="">
-							<li>Simple Link</li>
-						</a>
-					</ul>
-				</li>
-			</ul>
-		</li>
-	</ul>
-</div>
-
 <div class="wrapper">
+
 	<head>
 		<title>{{ page.title }}</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<link rel="stylesheet" type="text/css" href="/css/shell.css">
 		<link rel="stylesheet" type="text/css" href="/css/menu.css">
+		<!-- <link rel="stylesheet" type="text/css" href="/css/fonts.css"> -->
 		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 	</head>
 
 	<body>
 		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/posts">Posts</a></li>
-			</ul>
+			<div class="menu">
+				<ul>
+					<a href="/">
+						<li>Home</li>
+					</a>
+					<a href="/about">
+						<li>About</li>
+					</a>
+					<li>
+						Posts
+						<ul>
+							<a href="/posts">
+								<li>All</li>
+							</a>
+							<a href="/posts">
+								<li>Life</li>
+							</a>
+							<li>
+								Software
+								<ul>
+									<a href="">
+										<li>Web</li>
+									</a>
+									<a href="">
+										<li>Data</li>
+									</a>
+									<a href="">
+										<li>Systems</li>
+									</a>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</nav>
 		<div class="container">
 			{{ content }}
