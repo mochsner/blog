@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "mochsner's tech blog"
+title: "Welcome to my Blog"
 date: 2019-04-27
 ---
 
