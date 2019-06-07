@@ -44,4 +44,8 @@ body {
   @media #{$mq-xxlarge} {
     font-size: $base-font-size*1.6;
   }
+
+  @media #{$mq-retina} {
+    font-size: $base-font-size*2.0;
+  }
 }
