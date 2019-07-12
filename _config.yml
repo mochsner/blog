@@ -1,7 +1,6 @@
 # Tells Jekyll some basics about this project (e.g. telling Jekyll the name of our site and what version of Markdown we'd like to use)
 # Site.<VarName> should reference below values
 name: Marc Ochsner
-blog_title: Marc Ochsner
 tagline: Something that makes me sound interesting
 plugins:
   - jekyll-html-pipeline
@@ -9,6 +8,10 @@ plugins:
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 exclude: ["Rakefile"]
+
+# Blog
+blog_title: Marc Ochsner
+blog_url: /posts/
 
 
 ## Defaults you can change
