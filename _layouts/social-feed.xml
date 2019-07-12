@@ -1,7 +1,7 @@
-<!-- _layouts/social-feed.xml, inspired by: https://eduardoboucas.com/blog/2015/04/28/sharing-jekyll-posts-on-social-media-using-front-matter-and-ifttt.html -->
 ---
 layout: social-feed
 ---
+<!-- _layouts/social-feed.xml, inspired by: https://eduardoboucas.com/blog/2015/04/28/sharing-jekyll-posts-on-social-media-using-front-matter-and-ifttt.html -->
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
