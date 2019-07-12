@@ -1,10 +1,14 @@
 # Tells Jekyll some basics about this project (e.g. telling Jekyll the name of our site and what version of Markdown we'd like to use)
-name: mochsner
+name: Marc Ochsner
+title: Marc Ochsner
+tagline: Something that makes me sound interesting
 plugins:
   - jekyll-html-pipeline
   - jekyll-octicons
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+exclude: ["Rakefile"]
+
 
 ## Defaults you can change
 ## The following defaults are set by GitHub, which you are free to override in your _config.yml file:
