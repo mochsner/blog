@@ -11,6 +11,7 @@ exclude: ["Rakefile"]
 
 # Blog
 blog_title: Marc Ochsner
+blog_description: Something descriptive
 blog_url: /posts/
 
 
