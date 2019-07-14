@@ -7,7 +7,7 @@ layout: social-feed
     <title>{{ site.blog_title | xml_escape }}</title>
     <description>{{ site.blog_description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.blog_url }}</link>
-    <atom:link href="{{ page.path | prepend: site.site_url"/" }}" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ site.site_url }}/{{ page.path }}" rel="self" type="application/rss+xml" />
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
