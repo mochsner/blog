@@ -15,7 +15,7 @@ layout: social-feed
     {% for post in site.posts limit:10 %}
         {% assign share = post.share | downcase %}
         {% if share contains platform %}
-        <item>
+        <entry>
             <title>{{ post.title | xml_escape }}</title>
             <description>{{ post.content | xml_escape }}</description>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
@@ -27,7 +27,7 @@ layout: social-feed
             {% for cat in post.categories %}
             <category>{{ cat | xml_escape }}</category>
             {% endfor %}
-        </item>
+        </entry>
         {% endif %}
     {% endfor %}
   </channel>
