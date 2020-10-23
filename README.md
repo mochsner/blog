@@ -35,6 +35,9 @@ rake test
 ```
 8. Build Jekyll Locally
 ```
+# This builds the files to use dynamic html pages
+bundle exec jekyll build
+# This serves the rest of the files (--livereload is optional)
 bundle exec jekyll serve --livereload
 ```
 9. ???
