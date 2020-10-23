@@ -23,10 +23,11 @@ gem install jekyll bundler
 gem install rake
 ```
 
-6. Update using bundler
+6. Update bundler + Install gems using bundler
 ```bash
-bundle update --bundler
 # Note: you may be asked to update additional plugins. Do so.
+bundle update --bundler
+bundle install
 ```
 7. Run Rake / Unit Tests
 ```
@@ -34,7 +35,7 @@ rake test
 ```
 8. Build Jekyll Locally
 ```
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 9. ???
 10. Push changes to master!
