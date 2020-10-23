@@ -14,17 +14,33 @@ echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 ```
-4. Install Jekyll `gem install jekyll bundler`
-5. Install Rake (testing) `gem install rake`
+4. Install Jekyll and Bundler (both used to serve site)
+```bash
+gem install jekyll bundler
+```
+5. Install Rake (testing) 
+```bash
+gem install rake
+```
 
-## Commands
-# Run Rake Tests
-- rake test
-# Build Jekyll Locally
-- bundle exec jekyll serve
+6. Update using bundler
+```bash
+bundle update --bundler
+# Note: you may be asked to update additional plugins. Do so.
+```
+7. Run Rake / Unit Tests
+```
+rake test
+```
+8. Build Jekyll Locally
+```
+bundle exec jekyll serve
+```
+9. ???
+10. Push changes to master!
 
 # TODO: Cross-Linux Docs (e.g. using Bundle)
 
 ## Useful Documents
-* Testing Locally: https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll
-* https://github.com/barryclark/jekyll-now
+* [https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll](Testing Locally)
+* [https://github.com/barryclark/jekyll-now](Jekyll Now)
