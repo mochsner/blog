@@ -1,0 +1,46 @@
+---
+layout: post
+title: "#100DaysOfCode - Day 9: Blog resdesign... @angular/material?"
+date: 2020-10-31
+permalink: /100Days/:slug
+categories: [100Days, Tech]
+---
+
+Happy halloween! Today, tomorrow, and through-out the week, I will be working on redesigning some of my website. 
+
+I'm currently looking at using @angular/material, which is pretty straight forward and compatible with Jekyll pages on Github (what this blog runs on).
+
+While I've got a ways to go, I've started drafting up some of the instructions for getting this setup, so I can transfer it to the [README.md](https://github.com/mochsner/mochsner.github.io/README.md) if that's what's decided on.
+
+### Installing Angular + @angular/material
+
+1. Generate the app
+
+```bash
+ng new my-app-name
+```
+
+    Prompts:
+    - Y for routing
+    - Styles:
+      - LESS: lightweight and used by bootstrap, but not very dynamic and formatting is whitespace based
+      - SCSS: lightweight and flexible, most popular amongst web developers
+      - Stylus: Newer framework, reliant on Node, but preferred by developers such as Wes Bos that are very front-end focused. A bit more features with skipping variables
+
+2. Add Angular Material
+
+    ```bash
+    cd my-app-name
+    ng add @angular/material
+    ```
+    Prompts:
+    - Theme: Indigo Pink (or whichever)
+    - Select `Y` for setting up global Typography styles
+    - Select `Y` for animations (duh)
+
+
+... I know there's still a ways to go, but my wife and I are celebrating being 99 days from Feb 7th today (our forecasted "big day"), and celebrating halloween =) Happy coding!
+
+[MyWifeAndHerBumpkin](~/_posts/img/20201031202255.png)
+
+~ Moxnr
