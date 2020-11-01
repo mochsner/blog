@@ -41,6 +41,4 @@ ng new my-app-name
 
 ... I know there's still a ways to go, but my wife and I are celebrating being 99 days from Feb 7th today (our forecasted "big day"), and celebrating halloween =) Happy coding!
 
-[MyWifeAndHerBumpkin](~/_posts/img/20201031202255.png)
-
 ~ Moxnr
