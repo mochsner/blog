@@ -4,16 +4,16 @@
 <div class="wrapper">
 
 	<head>
+  		{% include googletagmanager_head.html %}
 		<title>{{ page.title }}</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<link rel="stylesheet" type="text/css" href="/css/shell.css">
 		<link rel="stylesheet" type="text/css" href="/css/menu.css">
-		<!-- <link rel="stylesheet" type="text/css" href="/css/fonts.css"> -->
-		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 	</head>
 
 	<body>
+  		{% include googletagmanager_body.html %}
 		<nav>
 			<div class="menu">
 				<ul>
@@ -36,7 +36,7 @@
 		<footer>
 			<ul class="container d-flex flex-row justify-content-between">
 				<li><a href="https://github.com/mochsner">github.com/mochsner</a></li>
-				<li><a href="https://twitter.com/moxnr">twitter.com/moxnr</a></li>
+				<li><a href="https://twitter.com/marcochsner">twitter.com/marcochsner</a></li>
 			</ul>
 		</footer>
 	</body>
