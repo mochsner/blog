@@ -1,8 +1,8 @@
 # Tells Jekyll some basics about this project (e.g. telling Jekyll the name of our site and what version of Markdown we'd like to use)
 # Site.<VarName> should reference below values
-title: mox devs
+title: Mox Devs
 name: marc ochsner
-tagline: christian, husband, developer
+tagline: christian, husband, father, developer
 plugins:
   - jekyll-html-pipeline
   - jekyll-octicons
