@@ -6,6 +6,7 @@ tagline: christian, husband, father, developer
 plugins:
   - jekyll-html-pipeline
   - jekyll-octicons
+  - jemoji
 markdown: kramdown
 permalink: /blog/:year/:month/:day
 exclude: ["Rakefile"]
