@@ -1,6 +1,6 @@
 # mochsner.github.io
 
-This website is based on Jekyll.
+This website/blog is based on Jekyll!
 
 ## Ubuntu OS Setup
 
