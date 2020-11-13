@@ -37,3 +37,7 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+img { 
+    display:block; 
+} 
