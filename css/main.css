@@ -1,43 +1,80 @@
+/* Main.scss */
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
+  font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+  padding: 0px;
+  list-style: none;
+  font-weight: bold; }
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
+nav ul li, footer ul li {
+  display: inline;
+  margin-right: 20px; }
+
+a {
+  text-decoration: none;
+  color: #999; }
+
+a:hover {
+  text-decoration: underline; }
+
+h1 {
+  font-size: 3em;
+  font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
+
+p {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: #333; }
+
+footer {
+  border-top: 1px solid #d5d5d5;
+  font-size: .8em; }
+
+ul.posts {
+  margin: 20px auto 40px;
+  font-size: 1.5em; }
 
 ul.posts li {
-    list-style: none;
-}
+  list-style: none; }
 
-img { 
-    display:block; 
-} 
+img {
+  display: block; }
+
+/* blogpost.scss */
+/* Page navigation taken from 
+  https://david.elbe.me/jekyll/2015/06/20/how-to-link-to-next-and-previous-post-with-jekyll.html
+  */
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden; }
+  .PageNavigation a {
+    display: block;
+    width: 50%;
+    float: left;
+    margin: 1em 0; }
+  .PageNavigation .next {
+    text-align: right; }
+
+/* fonts.scss */
+body {
+  font-size: 1em;
+  line-height: 1.5; }
+  @media (min-width: 64em) {
+    body {
+      font-size: 1.2em;
+      line-height: 1.8; } }
+  @media (min-width: 85.375em) {
+    body {
+      font-size: 1.3em; } }
+  @media (min-width: 120em) {
+    body {
+      font-size: 1.4em; } }
+  @media (min-width: 160em) {
+    body {
+      font-size: 1.6em; } }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+      font-size: 2em; } }
+
+/*# sourceMappingURL=main.css.map */
