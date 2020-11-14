@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mochsner
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mochsner.github.io
+  * I am mochsner (https://keybase.io/mochsner) on keybase.
+  * I have a public key ASBFddyZa-GfeRnpHuL9MYfuLb5eFEcrvb5q9Eh8cdKHlQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204575dc996be19f7919e91ee2fd3187ee2dbe5e14472bbdbe6af4487c71d287950a",
+      "host": "keybase.io",
+      "kid": "01204575dc996be19f7919e91ee2fd3187ee2dbe5e14472bbdbe6af4487c71d287950a",
+      "uid": "9430ad4ffa5f9451c3204e6dbdf52c19",
+      "username": "mochsner"
+    },
+    "merkle_root": {
+      "ctime": 1605370896,
+      "hash": "b212fce568342e4c49d24f8aab96cf6324591a2a97b6cf43629f1ce212ef0fc4d786fdefb6ccc4a2233a13a1fdfd7948c554b9625fe2997ed41048fd028b8ca5",
+      "hash_meta": "bbe082530a630ef61eb5ba8fcfca66a80461d38e51ec278bdbfe8ce9ce37331f",
+      "seqno": 18122108
+    },
+    "service": {
+      "entropy": "Y2EJBEQ+eOa4/l5pfQFJAsOZ",
+      "hostname": "mochsner.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1605370945,
+  "expire_in": 504576000,
+  "prev": "33543ffc691c9aaf6b77f94c7b876890fdef84b97545c27b608554fddf1a16c8",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRXXcmWvhn3kZ6R7i/TGH7i2+XhRHK72+avRIfHHSh5UKp3BheWxvYWTESpcCBsQgM1Q//Gkcmq9rd/lMe4dokP3vhLl1RcJ7YIVU/d8aFsjEIFj2Ul9+PUhGIW64uAQyYRZvSt019cxklBec6wXaV2qSAgHCo3NpZ8RAfxyEk+GmtoVJ7Q7yxn1Db2X0UWeDIe4dz6q4jZvPYLBVoq6OBuGLhOqySQqLUYzRlb/MohCKuqW7kfUKTwxxDqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPkXuxr44KjEp76S5rjqD/JFNuWNsyu2FWeB46EtW6igo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mochsner
+
+==================================================================
