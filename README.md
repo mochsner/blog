@@ -47,7 +47,13 @@ This website/blog is based on Jekyll!
     rake test
     ```
 
-8. Build Jekyll Locally
+8. Run sass/scss compiler
+
+    ```cli
+    sass --watch css/
+    ```
+
+9.  Build Jekyll Locally
 
     ```bash
     # This builds the files to use dynamic html pages
@@ -56,9 +62,9 @@ This website/blog is based on Jekyll!
     bundle exec jekyll serve --livereload
     ```
 
-9. ???
+10. ???
 
-10. Push changes to master!
+11. Push changes to master!
 
 ## TODO: Cross-Linux Docs (e.g. using Bundle)
 
