@@ -7,8 +7,8 @@ gem "jekyll" # IS THIS EVEN REQUIRED?
 gem 'github-pages', group: :jekyll_plugins  #
 gem 'jekyll-octicons'                       # HTML > {% octicon smiley size:large class:"right left" aria-label:hi %}
 gem 'jemoji'
-# gem 'kramdown'
-# gem 'rouge'
+gem 'kramdown'
+gem 'rouge'
 
 ##  HTML-proofer, current error (rake test --trace)
 # LoadError: Could not open library 'libcurl': The specified module could not be found.
