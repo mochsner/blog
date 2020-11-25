@@ -23,7 +23,7 @@
 				md-no-ink-bar="disableInkBar"
 				md-selected-nav-item="currentNavItem"
 				nav-bar-aria-label="navigation links">
-				<md-nav-item md-nav-href="/" name="Page1">
+				<md-nav-item md-nav-href="/" name="page1">
 				  Home
 				</md-nav-item>
 				<md-nav-item md-nav-href="/about" name="page2">
@@ -75,9 +75,6 @@
   function AppCtrl($scope) {
     $scope.currentNavItem = 'page1';
 
-    $scope.goto = function(page) {
-      $scope.status = "Goto " + page;
-    };
   }
 })();
 </script>
