@@ -17,6 +17,8 @@ blog_title: Marc Ochsner
 blog_description: Something descriptive
 blog_url: /posts/
 
+# Syntax
+highlighter: rouge
 
 ## Defaults you can change
 ## The following defaults are set by GitHub, which you are free to override in your _config.yml file:
@@ -40,6 +42,6 @@ blog_url: /posts/
 # highlighter: rouge
 # gist:
 #   noscript: false
-# kramdown:
+kramdown:
 #   math_engine: mathjax
-#   syntax_highlighter: rouge
+   syntax_highlighter: rouge

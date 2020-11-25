@@ -1,8 +1,4 @@
----
-# Front matter comment to ensure Jekyll properly reads file.
-# Ignore 'error' in other linters
----
-// IN PROGRESS -> Reference https://app.getpocket.com/read/2606415253
+// IN PROGRESS -> Reference https://dev.to/felipperegazio/building-a-pure-css-menu-with-nested-dropdowns-hcn 
 .menu {
   // define the height of the menu
   --menu-height: 40px;
@@ -17,7 +13,7 @@
     padding: 16px;
     margin: 0;
     li {
-      aopacity: .8;
+      opacity: .8;
       color: #ffffff;      
       cursor: pointer;
       transition: 200ms;
