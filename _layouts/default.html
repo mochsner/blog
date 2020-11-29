@@ -7,37 +7,42 @@
   		{% include googletagmanager_head.html %}
   		{% include analytics.html %}
 		<title>{{ page.title }}</title>
+		<link rel="shortcut icon" href="/assets/img/shiny-shuckle.ico.jpg" type="image/x-icon" />
+
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/style/main.css">
-		<link rel="stylesheet" type="text/css" href="/style/shell.css">
-		<link rel="stylesheet" type="text/css" href="/style/menu.css">
 
-		<script src="node_modules/angular/angular.js"></script>
+		<link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
 	</head>
 
 	<body>
-  		{% include googletagmanager_body.html %}
-		  <div ng-controller="AppCtrl">
+		{% include googletagmanager_body.html %}
+
+		<div ng-app="myApp">
+		  <div ng-controller="myCtrl">
+			
 			<md-content class="md-padding">
 			  <md-nav-bar
 				md-no-ink-bar="disableInkBar"
 				md-selected-nav-item="currentNavItem"
-				nav-bar-aria-label="navigation links">
-				<md-nav-item md-nav-href="/" name="page1">
-				  Home
-				</md-nav-item>
-				<md-nav-item md-nav-href="/about" name="page2">
-				  About
-				</md-nav-item>
-				<md-nav-item md-nav-click="/posts" name="page3">
-				  Posts
-				</md-nav-item>
-				<!-- <md-nav-item md-nav-click="goto('page4')" name="page4" disabled>
-				  Page Four
-				</md-nav-item> -->
-			  </md-nav-bar>
+				nav-bar-aria-label="navigation links" ng-cloak>
+					<md-nav-item md-nav-href="/" name="Home">
+						Home
+					</md-nav-item>
+					<md-nav-item md-nav-href="/about" name="About">
+						About
+					</md-nav-item>
+					<md-nav-item md-nav-href="/posts" name="Posts">
+						Posts
+					</md-nav-item>
+					
+					<div class="_md-nav-button-text">&nbsp;&nbsp;mochsner.github.io</div>
+				
+				</md-nav-bar>
 			</md-content>
+
 			</div>
+		</div>
 		<!-- <nav>
 			<div class="menu">
 				<ul>
@@ -63,17 +68,23 @@
 				<li><a href="https://twitter.com/moxnr" rel="nofollow"><img src="https://camo.githubusercontent.com/fb200388fb632a009a9a532836391e78ae36fcde9ddb7e519a197026485abf79/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6d6f786e723f7374796c653d736f6369616c" alt="Twitter: moxnt" data-canonical-src="https://img.shields.io/twitter/follow/moxnr?style=social" style="max-width:100%;"></a></li>
 			</ul>
 		</footer>
+
+		<script src="/node_modules/angular/angular.js"></script> 
+		<script src="/node_modules/angular-aria/angular-aria.js"></script> 
+		<script src="/node_modules/angular-animate/angular-animate.js"></script> 
+		<script src="/node_modules/angular-messages/angular-messages.js"></script> 
+		<script src="/node_modules/angular-material/angular-material.js"></script> 
 	</body>
 </div>
 <script>
 	(function() {
-  'use strict';
+//   'use strict';
 
-  angular.module('navBarDemoBasicUsage', ['ngMaterial'])
-      .controller('AppCtrl', AppCtrl);
+  angular.module('myApp', ['ngMaterial', 'ngMessages'])
+      .controller('myCtrl', myCtrl);
 
-  function AppCtrl($scope) {
-    $scope.currentNavItem = 'page1';
+  function myCtrl($scope) {
+    $scope.currentNavItem = window.location.pathname.split('/')[0];
 
   }
 })();
