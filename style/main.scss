@@ -50,4 +50,7 @@ img {
 @import "fonts.scss";
 
 /* menu.scss */
-@import "menu.scss"
+@import "menu.scss";
+
+/* syntax highlighting */
+@import "jekyll-pygments-themes/monokai.css";

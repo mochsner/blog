@@ -8,38 +8,52 @@
   		{% include analytics.html %}
 		<title>{{ page.title }}</title>
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<link rel="stylesheet" type="text/css" href="/css/shell.css">
-		<link rel="stylesheet" type="text/css" href="/css/menu.css">
+		<link rel="stylesheet" type="text/css" href="/style/main.css">
+		<link rel="stylesheet" type="text/css" href="/style/shell.css">
+		<link rel="stylesheet" type="text/css" href="/style/menu.css">
+
+		<script src="node_modules/angular/angular.js"></script>
 	</head>
 
 	<body>
   		{% include googletagmanager_body.html %}
-		<nav>
+		  <div ng-controller="AppCtrl">
+			<md-content class="md-padding">
+			  <md-nav-bar
+				md-no-ink-bar="disableInkBar"
+				md-selected-nav-item="currentNavItem"
+				nav-bar-aria-label="navigation links">
+				<md-nav-item md-nav-href="/" name="page1">
+				  Home
+				</md-nav-item>
+				<md-nav-item md-nav-href="/about" name="page2">
+				  About
+				</md-nav-item>
+				<md-nav-item md-nav-click="/posts" name="page3">
+				  Posts
+				</md-nav-item>
+				<!-- <md-nav-item md-nav-click="goto('page4')" name="page4" disabled>
+				  Page Four
+				</md-nav-item> -->
+			  </md-nav-bar>
+			</md-content>
+			</div>
+		<!-- <nav>
 			<div class="menu">
 				<ul>
 					<a href="/">
-						<li>Home</li>
+						<li>Main</li>
 					</a>
 					<a href="/about">
 						<li>About</li>
 					</a>
 					<a href="/posts">
-            			<li>Posts</li>
+            <li>Posts</li>
 					</a>
-					<ul>
-							<a href="/posts">
-								<li>All</li>
-							</a>
-							<a href="/posts">
-								<li>Life</li>
-							</a>
-						</ul>
-					<li>
 					<h3>mochsner.github.io</h3>
 				</ul>
 			</div>
-		</nav>
+		</nav> -->
 		<div class="container">
 			{{ content }}
 		</div><!-- /.container -->
@@ -51,5 +65,17 @@
 		</footer>
 	</body>
 </div>
+<script>
+	(function() {
+  'use strict';
 
+  angular.module('navBarDemoBasicUsage', ['ngMaterial'])
+      .controller('AppCtrl', AppCtrl);
+
+  function AppCtrl($scope) {
+    $scope.currentNavItem = 'page1';
+
+  }
+})();
+</script>
 </html>
