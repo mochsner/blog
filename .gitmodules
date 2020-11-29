@@ -1,0 +1,6 @@
+[submodule "jekyll-pygments-themes"]
+	path = jekyll-pygments-themes
+	url = https://github.com/jwarby/jekyll-pygments-themes
+[submodule "style/jekyll-pygments-themes"]
+	path = style/jekyll-pygments-themes
+	url = https://github.com/jwarby/jekyll-pygments-themes
