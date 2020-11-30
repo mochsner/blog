@@ -3,4 +3,7 @@
   margin: 20px;
   background-color: #FFF2E0; }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
 /*# sourceMappingURL=menu.css.map */
