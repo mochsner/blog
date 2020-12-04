@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html>
+
+<div class="wrapper">
+
+	<head>
+
+  		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KPLTPHL');</script>
+    <!-- End Google Tag Manager -->
+  		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-181730133-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-181730133-1');
+</script>
+
+		<title>#100DaysOfCode - Day 42: Angular-material Autocomplete</title>
+		<link rel="shortcut icon" href="/assets/img/shiny-shuckle.ico" type="image/x-icon" />
+
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/style/main.css">
+
+		<link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+
+		<script src="/node_modules/angular/angular.js"></script> 
+		<script src="/node_modules/angular-aria/angular-aria.js"></script> 
+		<script src="/node_modules/angular-animate/angular-animate.js"></script> 
+		<script src="/node_modules/angular-messages/angular-messages.js"></script> 
+		<script src="/node_modules/angular-material/angular-material.js"></script> 
+		<script>
+			(function() {
+		//   'use strict';
+		
+			angular.module('myApp', ['ngMaterial', 'ngMessages'])
+					.controller('myCtrl', myCtrl)
+					.config(function($interpolateProvider) {
+						$interpolateProvider.startSymbol('{[{');
+						$interpolateProvider.endSymbol('}]}');
+					});
+		
+			function myCtrl($scope) {
+				$scope.currentNavItem = window.location.pathname.split('/')[0];
+        $scope.testItem = "This is a testItem";
+		
+			}
+		
+		})();
+		</script>
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPLTPHL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+		<div ng-app="myApp">
+		  <div ng-controller="myCtrl">
+			
+			<md-content class="md-padding">
+			  <md-nav-bar
+				md-no-ink-bar="disableInkBar"
+				md-selected-nav-item="currentNavItem"
+				nav-bar-aria-label="navigation links" ng-cloak>
+					<md-nav-item md-nav-href="/" name="Home">
+						Home
+					</md-nav-item>
+					<md-nav-item md-nav-href="/about" name="About">
+						About
+					</md-nav-item>
+					<md-nav-item md-nav-href="/posts" name="Posts">
+						Posts
+					</md-nav-item>
+					
+					<div class="_md-nav-button-text">&nbsp;&nbsp;mochsner.github.io</div>
+				
+				</md-nav-bar>
+			</md-content>
+
+			</div>
+		</div>
+		<!-- <nav>
+			<div class="menu">
+				<ul>
+					<a href="/">
+						<li>Main</li>
+					</a>
+					<a href="/about">
+						<li>About</li>
+					</a>
+					<a href="/posts">
+            <li>Posts</li>
+					</a>
+					<h3>mochsner.github.io</h3>
+				</ul>
+			</div>
+		</nav> -->
+		<div class="container">
+			<article class="post">
+  <h1>#100DaysOfCode - Day 42: Angular-material Autocomplete</h1>
+
+  <div class="PageNavigation">
+  
+    <a class="prev" href="/100Days/day41">&laquo; #100DaysOfCode - Day 41: Sleep is important</a>
+  
+  
+</div>
+
+  <div class="entry">
+    <p>Today, I’ve mostly been working on some AngularJS stuff. At work, there’s not enough meaningful to post about, so I wanted to dive into what AngularJS things I’m doing right now on my blog.</p>
+
+<p>For starts, I wanted to talk about the two technologies I’m using for this blog, how they conflict, and how I’m resolivng that conflict.</p>
+
+<h3 id="a-jekyll---a-file-generating-software">A. Jekyll - a file generating software</h3>
+
+<p>This blog has always been based on Jekyll, which essentially uses a language called Ruby, to interpret a bunch of template files that then get rendered into HTML (the front-end stuff you see), from Markdown (<a href="https://www.markdownguide.org/basic-syntax/">guide</a>).</p>
+
+<p>Jekyll is a tool that mostly has its own syntax:</p>
+
+<ul>
+  <li>
+    <p>Double <code class="language-plaintext highlighter-rouge">{{ }}</code> tags to access variables, such as the name of this post when I created the <code class="language-plaintext highlighter-rouge">post</code> template:</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>{{ page.title }}<span class="nt">&lt;/h1&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">{%  %}</code> to add files, or do more sophisicated functions, like <code class="language-plaintext highlighter-rouge">if statements</code> or <code class="language-plaintext highlighter-rouge">looping</code></p>
+
+    <ul>
+      <li>
+        <p><code class="language-plaintext highlighter-rouge">{% include googletagmanager_head.htm %}</code> &lt;– Adding google tag manager’s script tag into the template</p>
+      </li>
+      <li>
+        <p>If statement (decides when to show next/previous links on blog posts)</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{%  if page.previous.url %}
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"prev"</span> <span class="na">href=</span><span class="s">"{{page.previous.url}}"</span><span class="nt">&gt;</span><span class="ni">&amp;laquo;</span> {{page.previous.title}}<span class="nt">&lt;/a&gt;</span>
+{%  endif %}
+{%  if page.next.url %}
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"next"</span> <span class="na">href=</span><span class="s">"{{page.next.url}}"</span><span class="nt">&gt;</span>{{page.next.title}} <span class="ni">&amp;raquo;</span><span class="nt">&lt;/a&gt;</span>
+{%  endif %}
+```html
+
+  - Loop through my posts and display them like [here](/posts)
+  
+  ```html
+  {%  for post in site.posts %}
+  <span class="nt">&lt;li&gt;</span>
+    <span class="nt">&lt;span&gt;</span> {{ post.date | date_to_string }}<span class="nt">&lt;/span&gt;</span> » <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ post.url }}"</span> <span class="na">title=</span><span class="s">"{{ post.title }}"</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  {%  endfor %}
+</code></pre></div></div>
+
+<p>In terms of how it makes connections between everything, it uses a technology called Kramdown (which is amazing), that interprets my <code class="language-plaintext highlighter-rouge">markdown</code>, and compiles every single file into a bunch of different HTML files, which ultimately have the same code, repeated from page-to-page. So, when you navigate through my blog, the menu looks the same, but it’s technically a new page and you reload that menu again, because that same menu code exists in <strong>every. single. file.</strong> for <strong>every. single. page</strong>.</p>
+
+<p>This isn’t a problem for a small blog like mine, but for a big application that has a lot in posts, we should really only require you to reload the code within the post (and not all the menus and such surrounding the post).</p>
+
+<p>So, why don’t I do that? Well, because it’s not built in (Enter: AngularJS).</p>
+
+<h3 id="b-angularjs">B. AngularJS</h3>
+
+<p>AngularJS is a front-end framework that was built to help turn static sites (like Jekyll static text generators) into “Single Page applications”, so that it uses a browser-based language called <code class="language-plaintext highlighter-rouge">javascript</code> to decide what HTML files to load and when. The great part about AngularJS is that you can decide to only load small components of the entire application, so I could decide to <em>just load my blog post</em> within the current page, without all that extra stuff.</p>
+
+<p>Since my wife is calling me to bed, I’ll have to refrain from diving too far into depth with AngularJS, but just know that it can do a lot of handling on the front-end to make the amount of files/content you load in your browser much smaller.</p>
+
+<p>Unfortunately, AngularJS <em>does</em> have a conflict with AngularJS, in that it also uses the double squiggly <code class="language-plaintext highlighter-rouge">{{ }}</code> notation to access variables (but, in this case, AngularJS, not Jekyll, variables). Well, AngularJS developers have thought of this being a possible issues with conflicting tools, so they introduced a way to get around it by changing the symbol. By changing this on the site’s angularJS app, I’m now able to properly use AngularJS within this app:</p>
+
+<!-- ```javascript
+module.config(function($interpolateProvider) {
+  $interpolateProvider
+    .startSymbol('[[').endSymbol(']]');
+});
+``` -->
+
+<p>And now, here’s some dynamic angular loading in my blog, using this bracket notation:</p>
+
+<html>
+    <script>
+    var testVariable = 0;
+    angular.module('myApp').config(function($interpolateProvider) {
+        $interpolateProvider.startSymbol('{[{').endSymbol('}]}');
+    });
+    angular.module('myApp').controller('DemoController', function($scope) {
+        $scope.demoText = "This binding is brought you by // interpolation symbols //.";
+    });
+
+  </script>
+
+  <div ng-app="myApp" ng-controller="DemoController">
+    {[{demoText}]}
+  </div>
+  <div ng-app="myApp" ng-controller="myCtrl">
+    {[{testItem}]}
+  </div>
+</html>
+
+<p>Happy coding!</p>
+
+<p>~ Moxnr</p>
+
+  </div>
+
+  <div class="date">
+    Written on December  3, 2020
+  </div>
+
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'mochsner'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</article>
+
+		</div><!-- /.container -->
+		<footer>
+			<ul class="container d-flex flex-row justify-content-between">
+				<li><a href="https://github.com/mochsner"><img src="https://camo.githubusercontent.com/ce26e680a3b81e5c2c818558c4b40908f1d9e11f161143e80d14daa42f1c9773/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f6d6f6368736e65723f6c6162656c3d666f6c6c6f77267374796c653d736f6369616c" alt="GitHub: mochsner" data-canonical-src="https://img.shields.io/github/followers/mochsner?label=follow&amp;style=social" style="max-width:100%;"></a></li>
+				<li><a href="https://twitter.com/moxnr" rel="nofollow"><img src="https://camo.githubusercontent.com/fb200388fb632a009a9a532836391e78ae36fcde9ddb7e519a197026485abf79/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6d6f786e723f7374796c653d736f6369616c" alt="Twitter: moxnt" data-canonical-src="https://img.shields.io/twitter/follow/moxnr?style=social" style="max-width:100%;"></a></li>
+			</ul>
+		</footer>
+
+
+	</body>
+</div>
+
+</html>

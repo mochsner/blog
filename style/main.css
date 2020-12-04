@@ -1,5 +1,6 @@
 /* Main.scss */
-@import url(jekyll-pygments-themes/monokai.css);
+@import url(jekyll-pygments-themes/vs.css);
+
 nav ul, footer ul {
   font-family: 'Helvetica', 'Arial', 'Sans-Serif';
   padding: 0px;

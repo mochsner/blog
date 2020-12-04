@@ -4,6 +4,7 @@
 <div class="wrapper">
 
 	<head>
+
   		{% include googletagmanager_head.html %}
   		{% include analytics.html %}
 		<title>{{ page.title }}</title>
@@ -13,6 +14,30 @@
 		<link rel="stylesheet" type="text/css" href="/style/main.css">
 
 		<link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+
+		<script src="/node_modules/angular/angular.js"></script> 
+		<script src="/node_modules/angular-aria/angular-aria.js"></script> 
+		<script src="/node_modules/angular-animate/angular-animate.js"></script> 
+		<script src="/node_modules/angular-messages/angular-messages.js"></script> 
+		<script src="/node_modules/angular-material/angular-material.js"></script> 
+		<script>
+			(function() {
+		//   'use strict';
+		
+			angular.module('myApp', ['ngMaterial', 'ngMessages'])
+					.controller('myCtrl', myCtrl)
+					.config(function($interpolateProvider) {
+						$interpolateProvider.startSymbol('{[{');
+						$interpolateProvider.endSymbol('}]}');
+					});
+		
+			function myCtrl($scope) {
+				$scope.currentNavItem = window.location.pathname.split('/')[0];
+		
+			}
+		
+		})();
+		</script>
 	</head>
 
 	<body>
@@ -69,24 +94,8 @@
 			</ul>
 		</footer>
 
-		<script src="/node_modules/angular/angular.js"></script> 
-		<script src="/node_modules/angular-aria/angular-aria.js"></script> 
-		<script src="/node_modules/angular-animate/angular-animate.js"></script> 
-		<script src="/node_modules/angular-messages/angular-messages.js"></script> 
-		<script src="/node_modules/angular-material/angular-material.js"></script> 
+
 	</body>
 </div>
-<script>
-	(function() {
-//   'use strict';
 
-  angular.module('myApp', ['ngMaterial', 'ngMessages'])
-      .controller('myCtrl', myCtrl);
-
-  function myCtrl($scope) {
-    $scope.currentNavItem = window.location.pathname.split('/')[0];
-
-  }
-})();
-</script>
 </html>

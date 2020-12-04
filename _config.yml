@@ -10,7 +10,7 @@ plugins:
 markdown: kramdown
 permalink: /blog/:year/:month/:day
 exclude:
-  - "Rakefile"
+  - "node_modules/*.md"
 include:
   - "node_modules"
 site_url: https://mochsner.github.io 
