@@ -24,7 +24,7 @@
 			(function() {
 		//   'use strict';
 		
-			angular.module('myApp', ['ngMaterial', 'ngMessages'])
+			var app = angular.module('myApp', ['ngMaterial', 'ngMessages'])
 					.controller('myCtrl', myCtrl)
 					.config(function($interpolateProvider) {
 						$interpolateProvider.startSymbol('{[{');
