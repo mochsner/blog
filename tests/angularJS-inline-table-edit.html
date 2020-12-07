@@ -72,34 +72,41 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-		<!--  -->
-    <div ng-controller="Ctrl">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		rel="stylesheet">
+<div ng-controller="Ctrl">
+	<h4>Angular-XEditable - Multi-line Edit Template</h4>
 
-			<h4>Angular-XEditable - Single Item Edit</h4>
+	<table class="table">
+		<tr>
+		<th>
+			Name
+		</th>
+		<th>
+			Gender
+		</th>
+		<th>
+			Edit
+		</th>
+	</tr>
 
-			<table class="table">
-				<tr>
-				<th>
-					Name
-				</th>
-				<th>
-					Gender
-				</th>
-			</tr>
-
-				<tr ng-repeat="x in user">
-					<td>			
-						<a href="#" editable-text="x.name" onaftersave="updateUser(x)">
-							{{ x.name || 'empty' }}
-						</a>
-					</td>
-					<td>			
-						<a href="#" editable-text="x.gender" onaftersave="updateUser(x)">
-							{{ x.gender || 'empty' }}
-						</a>
-					</td>
-				</tr>
-			</table>
+		<tr ng-repeat="x in user">
+			<td>			
+				<a href="#" editable-text="x.name" onaftersave="updateUser(x)">
+					{{ x.name || 'empty' }}
+				</a>
+			</td>
+			<td>			
+				<a href="#" editable-text="x.gender" onaftersave="updateUser(x)">
+					{{ x.gender || 'empty' }}
+				</a>
+			</td>
+			<td>
+				<i class="material-icons" editable-text="x">border_color</i>
+			</td>
+		</tr>
+	</table>
+</div>
 
     
 
