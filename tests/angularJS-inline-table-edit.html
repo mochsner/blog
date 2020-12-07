@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+
+<div class="wrapper">
+
+	<head>
+
+  		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KPLTPHL');</script>
+    <!-- End Google Tag Manager -->
+  		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-181730133-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-181730133-1');
+</script>
+
+		<title>#100DaysOfCode - Day 42: Angular-material Autocomplete</title>
+		<link rel="shortcut icon" href="/assets/img/shiny-shuckle.ico" type="image/x-icon" />
+
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/style/main.css">
+
+		<link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+
+		<script src="/node_modules/angular/angular.js"></script> 
+		<script src="/node_modules/angular-aria/angular-aria.js"></script> 
+		<script src="/node_modules/angular-animate/angular-animate.js"></script> 
+		<script src="/node_modules/angular-messages/angular-messages.js"></script> 
+		<script src="/node_modules/angular-material/angular-material.js"></script> 
+
+
+
+		<script src="http://vitalets.github.io/angular-xeditable/dist/js/xeditable.js"></script>
+		<link rel="stylesheet" href="http://vitalets.github.io/angular-xeditable/dist/css/xeditable.css">
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.min.js"></script> -->
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://code.angularjs.org/1.8.2/angular-mocks.js"></script>
+
+
+	<script>
+			(function() {
+		//   'use strict';
+		
+			angular.module('myApp', ['ngMaterial', 'ngMessages'])
+					.config(function($interpolateProvider) {
+						$interpolateProvider.startSymbol('{[{');
+						$interpolateProvider.endSymbol('}]}');
+					});
+		
+			angular.module('myApp').controller('myCtrl', myCtrl)
+				
+			function myCtrl($scope) {
+				$scope.currentNavItem = window.location.pathname.split('/')[0];
+			}
+		
+		})();
+		</script>
+	</head>
+
+	<body ng-app="myApp">
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPLTPHL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+		<!--  -->
+    <div ng-controller="Ctrl">
+
+			<h4>Angular-XEditable - Single Item Edit</h4>
+
+			<table class="table">
+				<tr>
+				<th>
+					Name
+				</th>
+				<th>
+					Gender
+				</th>
+			</tr>
+
+				<tr ng-repeat="x in user">
+					<td>			
+						<a href="#" editable-text="x.name" onaftersave="updateUser(x)">
+							{{ x.name || 'empty' }}
+						</a>
+					</td>
+					<td>			
+						<a href="#" editable-text="x.gender" onaftersave="updateUser(x)">
+							{{ x.gender || 'empty' }}
+						</a>
+					</td>
+				</tr>
+			</table>
+
+    
+
+    
+		</div>
+			
+			<script>
+				var app = angular.module("myApp", ["xeditable", "ngMockE2E"]);
+
+				app.run(function(editableOptions) {
+					editableOptions.theme = 'bs3';
+				});
+
+				app.controller('Ctrl', function($scope, $q, $http) {
+					$scope.user = [
+					{
+						id: 1,
+						name: 'Marc Ochsner',
+						gender: 'Male'
+					},
+					{
+						id: 2,
+						name: 'Ann-Marie Thompson',
+						gender: 'Female'
+					}];
+
+					$scope.updateUser = function(currentUser) {
+						return $http.post('/updateUser', currentUser);
+					};
+				});
+
+				// mock `/updateUser` request
+				app.run(function($httpBackend) {
+					$httpBackend.whenPOST(/\/updateUser/).respond(function(method, url, data) {
+						// alert("Updated record:",data);
+						data = angular.fromJson(data);
+						if(data.name === 'error') {
+							return [500, 'Error message']; 
+						} else {
+							return [200, {status: 'ok'}]; 
+						}
+					});
+				});
+			</script>
+
+<p>Happy coding!</p>
+
+<p>~ Moxnr</p>
+
+  </div>
+
+  <div class="date">
+    Written on December  3, 2020
+  </div>
+
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'mochsner'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</article>
+
+		</div><!-- /.container -->
+		<footer>
+			<ul class="container d-flex flex-row justify-content-between">
+				<li><a href="https://github.com/mochsner"><img src="https://camo.githubusercontent.com/ce26e680a3b81e5c2c818558c4b40908f1d9e11f161143e80d14daa42f1c9773/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f6d6f6368736e65723f6c6162656c3d666f6c6c6f77267374796c653d736f6369616c" alt="GitHub: mochsner" data-canonical-src="https://img.shields.io/github/followers/mochsner?label=follow&amp;style=social" style="max-width:100%;"></a></li>
+				<li><a href="https://twitter.com/moxnr" rel="nofollow"><img src="https://camo.githubusercontent.com/fb200388fb632a009a9a532836391e78ae36fcde9ddb7e519a197026485abf79/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6d6f786e723f7374796c653d736f6369616c" alt="Twitter: moxnt" data-canonical-src="https://img.shields.io/twitter/follow/moxnr?style=social" style="max-width:100%;"></a></li>
+			</ul>
+		</footer>
+
+
+	</body>
+</div>
+
+</html>
