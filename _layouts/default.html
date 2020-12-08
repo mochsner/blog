@@ -25,7 +25,7 @@
 			(function() {
 		//   'use strict';
 		
-			app = angular.module('myApp', ['ngMaterial', 'ngMessages'])
+			app = angular.module('myApp', ['ngMaterial', 'ngMessages', "xeditable", "ngMockE2E"])
 					.controller('myCtrl', myCtrl)
 					.config(function($interpolateProvider) {
 						$interpolateProvider.startSymbol('{[{');
