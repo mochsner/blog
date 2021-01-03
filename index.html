@@ -17,7 +17,7 @@ layout: default
   </article>
 {% endfor %}
 <h1>Recent Posts</h1>
-{% for post in site.posts offset:1 limit:4 %}
+{% for post in site.posts offset:1 limit:5 %}
   {% unless post.categories[0] == 'social' %}
   <article class="post">
 
@@ -31,6 +31,4 @@ layout: default
   </article>
   {% endunless %}
 {% endfor %}
-  {% for post in site.posts limit:20 %}
-  {% endfor %}
 </div>
