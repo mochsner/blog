@@ -3,32 +3,24 @@ layout: default
 ---
 
 <div class="posts">
-<h1>Latest Post</h1>
-{% for post in site.posts limit:1 %}
-  <article class="post">
+  <h1>Latest Post</h1>
+  {% for post in site.posts limit:1 %}
+    <article class="post">
 
-    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-    <div class="entry">
-      {{ post.content }}
-    </div>
+      <div class="entry">
+        {{ post.content }}
+      </div>
 
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Article Link</a>
-  </article>
-{% endfor %}
-<h1>Recent Posts</h1>
-{% for post in site.posts offset:1 limit:5 %}
-  {% unless post.categories[0] == 'social' %}
-  <article class="post">
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Article Link</a>
+    </article>
+  {% endfor %}
 
-    <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-    <div class="entry">
-      {{ post.excerpt }}
-    </div>
-
-    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-  </article>
-  {% endunless %}
-{% endfor %}
+  <h1>Recent Posts</h1>
+  {% for post in site.posts offset:1 limit:5 %}
+    {% unless post.categories[0] == 'social' %}
+          {% include post_preview.html %}
+    {% endunless %}
+  {% endfor %}
 </div>

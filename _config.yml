@@ -23,6 +23,19 @@ blog_url: /posts/
 # Syntax
 highlighter: rouge
 
+
+# Categories via Collections https://kylewbanks.com/blog/creating-category-pages-in-jekyll-without-plugins
+collections:
+  category:
+    output: true
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+
 ## Defaults you can change
 ## The following defaults are set by GitHub, which you are free to override in your _config.yml file:
 
