@@ -20,12 +20,25 @@ layout: default
     {% endif %}
   {% endfor %}
 
-  <div class="PageNavigation">
+<div class="d-flex flex-row postinator">
   {% if previous_post %}
-    <a class="prev" href="{{previous_post.url}}">&laquo; {{previous_post.title}}</a>
+  <div class="page-item flex-fill" style="flex: 1 1 0;">
+    <a class="page-link" style="text-align:left;" href="{{previous_post.url}}">&laquo; {{previous_post.title}}</a>
+  </div>
+  {% else %}
+  <li class="page-item disabled flex-fill" style="flex: 1 1 0;">
+    <a class="page-link" style="text-align:left" href="#">&laquo; Previous</a>
+  </li>
   {% endif %}
+  
   {% if next_post %}
-    <a class="next" href="{{next_post.url}}">{{next_post.title}} &raquo;</a>
+  <div class="page-item flex-fill" style="flex: 1 1 0;">
+    <a class="page-link" style="text-align:right;" href="{{next_post.url}}">{{next_post.title}} &raquo;</a>
+  </div>
+  {% else %}
+  <div class="page-item disabled flex-fill" style="flex: 1 1 0;">
+    <a class="page-link" style="text-align:right" href="{{next_post.url}}">Next &raquo;</a>
+  </div>
   {% endif %}
 </div>
 
