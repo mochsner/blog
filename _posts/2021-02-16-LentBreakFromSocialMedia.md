@@ -2,7 +2,7 @@
 layout: secret
 title: "Lent 2021 - Quitting Social Media"
 date: 2021-02-16
-slug: /Lent2021
+permalink: /Lent2021
 categories:
   - MentalHealth
   - Christianity
