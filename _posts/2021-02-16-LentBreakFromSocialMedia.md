@@ -10,9 +10,13 @@ categories:
 
 Hi friends!
 
-So, lent's coming up and I've admittedly never quit anything (that I remember) for lent. I've been growing in my faith a bit, and this year I'm wanting to take a break from social media (particularly Facebook, but Twitter too) atleast until Easter, and hopefully even longer. I just don't think it's a great thing to be able to subconsciously compare lives so much, and sell my data to get targeted advertisements for. That, and Facebook is a huge ethical dilemma for me. I've quit instagram and snapchat years ago (see articles like [this](https://time.com/4793331/instagram-social-media-mental-health/) to signal the mental health reasoning), but Facebook/Twitter have sort of stuck... until now!
+So, lent is tomorrow and I've admittedly never quit anything (that I remember) for lent. I've been growing in my faith/practice, and lent is the perfect excuse to take a break from social media (particularly Facebook and Twitter) until Easter - maybe longer. 
 
-I'll be using this time to focus more on family, mental clarity, and a little bit of hobbyist software development (if time allows). As you may have noticed, Ann-Marie & I have started a new chapter of our lives with our baby girl (3 weeks on Friday). So, rather than me documenting everything on Facebook for the world to see, I'll be documenting anything on Adora's little [static website](https://adora.ochsners.us) we've created. I'm likely going to be sending out occasional e-mails to close friends/family since I'm not in group messages with everyone I care about, so if you want to be included on any emails, just contact me in some way in the "ways to contact" below (I will *not* have access to Facebook/Twitter)
+I don't think it's a great thing to be able to compare so much (purposely or not), many of the smartest people I know don't even have or use Facebook, and giving away my data for free to a company like Facebook _just doesn't sit well with me_. I've quit instagram and snapchat years ago (see articles like [this](https://time.com/4793331/instagram-social-media-mental-health/) on mental health reasoning), but Facebook/Twitter have somehow stuck... until today!
+
+As you may have noticed from my last post, Ann-Marie & I have started a new chapter of our lives with our baby girl (3 weeks on Friday). So, rather than me documenting everything on Facebook for the world to see, I'll be documenting everything on Adora's little [static website](https://adora.ochsners.us) we've created, which feels a lot more practical in that anyone can access it, online or offline (once downloaded), and it will always exist in it's form to be viewed (which is cool).
+
+I'm likely going to be sending out occasional e-mails to close friends/family, so if you want to be included on any email updates, just contact me in some way in the "ways to contact" below, and send me your e-mail. I will *not* have access to Facebook or Twitter, so don't post or message me here.
 
 Ways to contact:
  - Cell: 8432901198
@@ -20,10 +24,9 @@ Ways to contact:
  - Telegram: @mochsner / 8432901198
  - Signal: 8432901198
  - Keybase: https://keybase.io/mochsner
- - Posting at the bottom of any blog post [here](https://mochsner.github.io)
+ - Posting at the bottom of the [blog post](https://mochsner.github.io/Lent2021)
 
-Signing out,
-
+Signing off,
 Marc
 
-P.S. you're interested in the tech stuff I do, feel free to follow my personal [website/blog](https://mochsner.github.io). It's probably not that interesting, but I enjoy writing about software development or IT, so hopefully I get better at it. 
+P.S. You are loved, therefore you are awesome. Stay awesome.
