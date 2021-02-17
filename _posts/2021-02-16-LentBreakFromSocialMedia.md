@@ -1,6 +1,6 @@
 ---
 layout: secret
-title: "Lent 2021 - Quitting Social Media"
+title: "Lent 2021 - Social Media Cleanse"
 date: 2021-02-16
 permalink: /Lent2021
 categories:
