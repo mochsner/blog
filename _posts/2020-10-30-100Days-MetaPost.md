@@ -2,6 +2,11 @@
 layout: post
 title: "Meta-post about #100DaysOfCode"
 date: 2020-10-30
+categories: 
+  - blog
+  - 100Days
+  - family
+  - productivity
 ---
 I wanted to take a quick step back from #100DaysOfCode, and really say how much it means to me that Ann-Marie has supported and pushed me to get these posts up. She reads these every day, and whilst they may not always be the highest quality posts, I've really enjoyed the last week of learning, and posting, about my experiences. It means the world to me that she reads these.
 
