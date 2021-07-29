@@ -3,7 +3,11 @@ layout: post
 title: "CheckingIn!"
 date: 2021-07-22
 categories:
-  - General
+  - Tech
+  - Obsidian
+  - Github
+  - DevOps
+  - Linux
 ---
 
 Hi friends!
