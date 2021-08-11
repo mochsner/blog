@@ -4,24 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "91c121b332f4f5cb",
+        "id": "2a3391aafabb1fd0",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2021-07-25-Day94.md",
+            "file": "_posts/2021-08-11-Day95.md",
             "mode": "source"
-          }
-        }
-      },
-      {
-        "id": "54f8f0fbebd540da",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "_posts/2021-07-25-Day94.md",
-            "mode": "preview"
           }
         }
       }
@@ -63,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "21595b526533efb2",
@@ -80,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2021-07-25-Day94.md",
+                "file": "_posts/2021-08-11-Day95.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,20 +83,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "54f8f0fbebd540da",
+  "active": "2a3391aafabb1fd0",
   "lastOpenFiles": [
+    "_posts/2021-08-11-0122.md",
     "_posts/2021-07-25-Day94.md",
+    "_posts/2021-04-17-Day93.md",
+    "_drafts/2021-01-23-Day84.md",
+    "_drafts/2021-03-13-Day92-async.md",
+    "_templates/default.md.md",
     "_posts/2021-03-05-Day91.md",
     "Pasted image 20210728101742.png",
     "assets/img/Pasted image 20210728101756.png",
-    "Pasted image 20210728101642.png",
-    "_posts/2021-07-25-2033.md",
-    "_posts/2021-03-19-Day92.md",
-    "_posts/2021-04-17-Day93.md",
-    "_posts/2021-07-22-CheckingIn.md",
-    "_posts/2021-07-22-General Update.md"
+    "Pasted image 20210728101642.png"
   ]
 }
