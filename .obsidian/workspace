@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2021-08-11-Day95.md",
+            "file": "_posts/2021-08-13-Day96.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2021-08-11-Day95.md",
+                "file": "_posts/2021-08-13-Day96.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,6 +87,8 @@
   },
   "active": "2a3391aafabb1fd0",
   "lastOpenFiles": [
+    "_posts/2021-08-13-1531.md",
+    "_posts/2021-08-11-Day95.md",
     "_posts/2021-08-11-0122.md",
     "_posts/2021-07-25-Day94.md",
     "_posts/2021-04-17-Day93.md",
@@ -94,8 +96,6 @@
     "_drafts/2021-03-13-Day92-async.md",
     "_templates/default.md.md",
     "_posts/2021-03-05-Day91.md",
-    "Pasted image 20210728101742.png",
-    "assets/img/Pasted image 20210728101756.png",
-    "Pasted image 20210728101642.png"
+    "Pasted image 20210728101742.png"
   ]
 }

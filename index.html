@@ -15,6 +15,9 @@ layout: default
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Article Link</a>
+
+      {% include read-time.html content=post.content %}
+
     </article>
     {% endunless %}
   {% endfor %}
