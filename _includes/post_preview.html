@@ -1,9 +1,10 @@
   <article class="post">
 
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <h2>{% include read-time.html content=post.content %}</h2>
 
     <div class="entry">
-      {{ post.excerpt }}
+      {% if post.excerpt_separator %}{{ post.excerpt }}{% else %}{{ post.content | truncatewords:100 }}{% endif %}
     </div>
 
     <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
