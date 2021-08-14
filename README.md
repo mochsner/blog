@@ -4,12 +4,12 @@ This website/blog is based on Jekyll!
 
 ## Ubuntu OS Setup
 
-1. Install Ruby `sudo apt install ruby`
+1. Install Ruby `sudo apt install ruby` (or `sudo snap install ruby` for more up-to-date)
 
-2. Install Jekyll Dependencies
+2. Install Jekyll Dependencies (optional)
 
     ```bash
-    sudo apt-get install ruby-full build-essential zlib1g-dev
+    sudo apt-get install ruby-full build-essential zlib1g-dev -y
     ```
 
 3. Setup Gem Installation Directory
@@ -21,36 +21,20 @@ This website/blog is based on Jekyll!
     source ~/.bashrc
     ```
 
-4. Install Jekyll and Bundler (both used to serve site)
+4. Install Jekyll and Bundler (both used to serve site), then rake for unit testing.
 
     ```bash
-    gem install jekyll bundler
+    gem install jekyll bundler rake
     ```
 
-5. Install Rake (testing)
+5. Install 
 
-    ```bash
-    gem install rake
-    ```
 
-6. Update bundler + Install gems using bundler
+6. Install gems using bundler
 
     ```bash
     # Note: you may be asked to update additional plugins. Do so.
-    bundle update --bundler
     bundle install
-    ```
-
-7. Run Rake / Unit Tests
-
-    ```bash
-    rake test
-    ```
-
-8. Run sass/scss compiler
-
-    ```cli
-    sass --watch css/
     ```
 
 9.  Build Jekyll Locally
@@ -62,9 +46,23 @@ This website/blog is based on Jekyll!
     bundle exec jekyll serve --livereload
     ```
 
-10. ???
+- (OPTIONAL) Update bundler
+    
+    ```
+    bundle update --bundler
+    ```
 
-11. Push changes to master!
+- (OPTIONAL) Run sass/scss compiler
+
+    ```cli
+    sass --watch css/
+    ```
+
+- (OPTIONAL) Run Rake / Unit Tests
+
+    ```bash
+    rake test
+    ```
 
 ## TODO: Cross-Linux Docs (e.g. using Bundle)
 
