@@ -1,6 +1,6 @@
 ---
 permalink: "/category/all"
-layout: default
+layout: website-frame
 ---
 <h1>{{ page.title }}</h1>
 <ul class="posts">
