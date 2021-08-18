@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>ngJS Checklist</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta charset="utf-8">
+
+  <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+
+
+  <script src="../../node_modules/angular/angular.js"></script>
+  <script src="../../node_modules/angular-aria/angular-aria.js"></script>
+  <script src="../../node_modules/angular-animate/angular-animate.js"></script>
+  <script src="../../node_modules/angular-messages/angular-messages.js"></script>
+  <script src="../../node_modules/angular-material/angular-material.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+<script src="https://gitcdn.xyz/cdn/angular/bower-material/v1.2.3/angular-material.js"></script> -->
+
+</head>
+<body ontouchstart="">
+
+  <md-list ng-controller="ListCtrl" ng-cloak="" class="listdemoListControls" ng-app="MyApp">
+
+    <md-subheader class="md-no-sticky">Single Action Checkboxes</md-subheader>
+    <md-list-item ng-repeat="topping in toppings">
+      <p> {{ topping.name }} </p>
+      <md-checkbox class="md-secondary" ng-model="topping.wanted"></md-checkbox>
+    </md-list-item>
+  
+    <md-divider></md-divider>
+  
+    <md-subheader class="md-no-sticky">Secondary Buttons</md-subheader>
+    <md-list-item class="secondary-button-padding">
+      <p>Clicking the button to the right will fire the secondary action</p>
+      <md-button class="md-secondary" ng-click="doSecondaryAction($event)">More Info</md-button>
+    </md-list-item>
+    <md-list-item class="secondary-button-padding" ng-click="doPrimaryAction($event)">
+      <p>Click anywhere to fire the primary action, or the button to fire the secondary</p>
+      <md-button class="md-secondary" ng-click="doSecondaryAction($event)">More Info</md-button>
+    </md-list-item>
+  
+    <md-divider></md-divider>
+  
+    <md-subheader class="md-no-sticky">Secondary Menus</md-subheader>
+    <md-list-item>
+      <p>Click anywhere to fire the secondary action</p>
+  
+      <md-menu class="md-secondary">
+        <md-button class="md-icon-button">
+          <md-icon md-svg-icon="communication:message"></md-icon>
+        </md-button>
+        <md-menu-content width="4">
+          <md-menu-item>
+            <md-button>
+              Redial
+            </md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button>
+              Check voicemail
+            </md-button>
+          </md-menu-item>
+          <md-menu-divider></md-menu-divider>
+          <md-menu-item>
+            <md-button>
+              Notifications
+            </md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+  
+    </md-list-item>
+  
+    <md-divider></md-divider>
+  
+    <md-subheader class="md-no-sticky">Clickable Items with Secondary Controls</md-subheader>
+    <md-list-item ng-click="navigateTo(setting.extraScreen, $event)" ng-repeat="setting in settings">
+      <md-icon md-svg-icon="{{setting.icon}}"></md-icon>
+      <p> {{ setting.name }} </p>
+      <md-switch class="md-secondary" ng-model="setting.enabled"></md-switch>
+    </md-list-item>
+    <md-list-item ng-click="navigateTo('data usage', $event)">
+      <md-icon md-svg-icon="cached"></md-icon>
+      <p>Data Usage</p>
+    </md-list-item>
+  
+    <md-divider></md-divider>
+  
+    <md-subheader class="md-no-sticky">Checkbox with Secondary Action</md-subheader>
+    <md-list-item ng-repeat="message in messages">
+      <md-checkbox ng-model="message.selected"></md-checkbox>
+      <p>{{message.title}}</p>
+      <md-icon class="md-secondary" ng-click="doSecondaryAction($event)" aria-label="Chat" md-svg-icon="communication:message"></md-icon>
+    </md-list-item>
+  
+    <md-divider></md-divider>
+  
+    <md-subheader class="md-no-sticky">Avatar with Secondary Action Icon</md-subheader>
+    <md-list-item ng-repeat="person in people" ng-click="goToPerson(person.name, $event)" class="noright">
+      <img alt="{{ person.name }}" ng-src="{{ person.img }}" class="md-avatar">
+      <p>{{ person.name }}</p>
+      <md-checkbox class="md-secondary" ng-model="person.selected"></md-checkbox>
+      <md-icon md-svg-icon="communication:email" ng-click="doSecondaryAction($event)" aria-label="Send Email" class="md-secondary md-hue-3"></md-icon>
+      <md-icon class="md-secondary" ng-click="doSecondaryAction($event)" aria-label="Chat" md-svg-icon="communication:message"></md-icon>
+    </md-list-item>
+  </md-list>
+  
+  <!--
+  Copyright 2020 Google LLC. All Rights Reserved. 
+  Use of this source code is governed by an MIT-style license that can be found
+  in the LICENSE file at http://material.angularjs.org/HEAD/license.
+  -->
+  <script type="text/javascript">
+    angular.module('MyApp', ['ngMaterial', 'ngMessages'])
+    .config(function($mdIconProvider) {
+      $mdIconProvider
+        .iconSet('social', 'img/icons/sets/social-icons.svg', 24)
+        .iconSet('device', 'img/icons/sets/device-icons.svg', 24)
+        .iconSet('communication', 'img/icons/sets/communication-icons.svg', 24)
+        .defaultIconSet('img/icons/sets/core-icons.svg', 24);
+    })
+    .controller('ListCtrl', function($scope, $mdDialog) {
+      $scope.toppings = [
+        { name: 'Pepperoni', wanted: true },
+        { name: 'Sausage', wanted: false },
+        { name: 'Black Olives', wanted: true },
+        { name: 'Green Peppers', wanted: false }
+      ];
+    
+      $scope.settings = [
+        { name: 'Wi-Fi', extraScreen: 'Wi-Fi menu', icon: 'device:network-wifi', enabled: true },
+        { name: 'Bluetooth', extraScreen: 'Bluetooth menu', icon: 'device:bluetooth', enabled: false },
+      ];
+    
+      $scope.messages = [
+        {id: 1, title: "Message A", selected: false},
+        {id: 2, title: "Message B", selected: true},
+        {id: 3, title: "Message C", selected: true},
+      ];
+    
+      $scope.people = [
+        { name: 'Janet Perkins', img: 'img/100-0.jpeg', newMessage: true },
+        { name: 'Mary Johnson', img: 'img/100-1.jpeg', newMessage: false },
+        { name: 'Peter Carlsson', img: 'img/100-2.jpeg', newMessage: false }
+      ];
+    
+      $scope.goToPerson = function(person, event) {
+        $mdDialog.show(
+          $mdDialog.alert()
+            .title('Navigating')
+            .textContent('Inspect ' + person)
+            .ariaLabel('Person inspect demo')
+            .ok('Neat!')
+            .targetEvent(event)
+        );
+      };
+    
+      $scope.navigateTo = function(to, event) {
+        $mdDialog.show(
+          $mdDialog.alert()
+            .title('Navigating')
+            .textContent('Imagine being taken to ' + to)
+            .ariaLabel('Navigation demo')
+            .ok('Neat!')
+            .targetEvent(event)
+        );
+      };
+    
+      $scope.doPrimaryAction = function(event) {
+        $mdDialog.show(
+          $mdDialog.alert()
+            .title('Primary Action')
+            .textContent('Primary actions can be used for one click actions')
+            .ariaLabel('Primary click demo')
+            .ok('Awesome!')
+            .targetEvent(event)
+        );
+      };
+    
+      $scope.doSecondaryAction = function(event) {
+        $mdDialog.show(
+          $mdDialog.alert()
+            .title('Secondary Action')
+            .textContent('Secondary actions can be used for one click actions')
+            .ariaLabel('Secondary click demo')
+            .ok('Neat!')
+            .targetEvent(event)
+        );
+      };
+    
+    });
+    
+    
+    /**
+    Copyright 2020 Google LLC. All Rights Reserved. 
+    Use of this source code is governed by an MIT-style license that can be found
+    in the LICENSE file at http://material.angularjs.org/HEAD/license.
+    **/
+    </script>
+</body>
+</html>
