@@ -36,9 +36,9 @@
 </script>
 
 </head>
-<body ontouchstart="">
+<body ontouchstart="" ng-app="app">
 
-	<div>
+	<div ng-controller="ctrl" style="display:grid; grid-template-columns:1fr 1fr;">
 		<label>REM_FONT_SIZE</label>
 		<label>{{$scope.REM_FONT_SIZE}}</label>
 		<label>BROWSER_VIEWPORT_HEIGHT</label>
