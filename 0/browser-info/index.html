@@ -12,23 +12,24 @@
   <script src="../../node_modules/angular-animate/angular-animate.js"></script>
   <script src="../../node_modules/angular-messages/angular-messages.js"></script>
   <script src="../../node_modules/angular-material/angular-material.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
 
 <script type="text/javascript">
   // Constants
 
 
 		angular.module('app', [])
-			.controller('ctrl', function($scope) {
+			.controller('ctrl', function($scope, $window, $document) {
 			
 				// $scope.specs = {
 				$scope.REM_FONT_SIZE = parseFloat(getComputedStyle(document.documentElement).fontSize);
 				// Size of browser viewport.
-				$scope.BROWSER_VIEWPORT_HEIGHT = $window.height();
-				$scope.BROWSER_VIEWPORT_WIDTH = $window.width();
+				$scope.BROWSER_VIEWPORT_HEIGHT = $(window).height();
+				$scope.BROWSER_VIEWPORT_WIDTH = $(window).width();
 
 				// Size of HTML document (same as pageHeight/pageWidth in screenshot).
-				$scope.DOCUMENT_HEIGHT = $document.height();
-				$scope.DOCUMENT_WIDTH = $document.width();
+				$scope.DOCUMENT_HEIGHT = $(document).height();
+				$scope.DOCUMENT_WIDTH = $(document).width();
 				// }
 
 			});
@@ -40,15 +41,15 @@
 
 	<div ng-controller="ctrl" style="display:grid; grid-template-columns:1fr 1fr;">
 		<label>REM_FONT_SIZE</label>
-		<label>{{$scope.REM_FONT_SIZE}}</label>
+		<label>{{REM_FONT_SIZE}}</label>
 		<label>BROWSER_VIEWPORT_HEIGHT</label>
-		<label>{{$scope.BROWSER_VIEWPORT_HEIGHT}}</label>
+		<label>{{BROWSER_VIEWPORT_HEIGHT}}</label>
 		<label>BROWSER_VIEWPORT_WIDTH</label>
-		<label>{{$scope.BROWSER_VIEWPORT_WIDTH}}</label>
+		<label>{{BROWSER_VIEWPORT_WIDTH}}</label>
 		<label>DOCUMENT_HEIGHT</label>
-		<label>{{$scope.DOCUMENT_HEIGHT}}</label>
+		<label>{{DOCUMENT_HEIGHT}}</label>
 		<label>DOCUMENT_WIDTH</label>
-		<label>{{$scope.DOCUMENT_WIDTH}}</label>
+		<label>{{DOCUMENT_WIDTH}}</label>
 	</div>
 
 
