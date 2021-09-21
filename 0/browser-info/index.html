@@ -23,12 +23,12 @@
 				// $scope.specs = {
 				$scope.REM_FONT_SIZE = parseFloat(getComputedStyle(document.documentElement).fontSize);
 				// Size of browser viewport.
-				$scope.BROWSER_VIEWPORT_HEIGHT = $(window).height();
-				$scope.BROWSER_VIEWPORT_WIDTH = $(window).width();
+				$scope.BROWSER_VIEWPORT_HEIGHT = window.height();
+				$scope.BROWSER_VIEWPORT_WIDTH = window.width();
 
 				// Size of HTML document (same as pageHeight/pageWidth in screenshot).
-				$scope.DOCUMENT_HEIGHT = $(document).height();
-				$scope.DOCUMENT_WIDTH = $(document).width();
+				$scope.DOCUMENT_HEIGHT = document.height();
+				$scope.DOCUMENT_WIDTH = document.width();
 				// }
 
 			});
