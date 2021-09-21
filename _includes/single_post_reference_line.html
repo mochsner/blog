@@ -1,0 +1,17 @@
+<li>
+  <span> {{ post.date | date_to_string }}</span>
+
+    » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title | truncate: 45 }}</a>
+    {% include read-time.html content=post.content %}
+    <span class="tags">
+      »
+      {% assign sortedCategories = post.categories | sort %}
+      {% for category in sortedCategories | limit: 3 %}
+        {% unless category == "social" %}
+          <span class="tag">
+              <a href="/category/{{ category }}">#{{ category }}</a>
+          </span>
+          {% endunless %}
+      {% endfor %}
+    </span> 
+</li>
