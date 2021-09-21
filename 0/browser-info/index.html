@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Get your browser settings!</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta charset="utf-8">
+
+  <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+
+  <script src="../../node_modules/angular/angular.js"></script>
+  <script src="../../node_modules/angular-aria/angular-aria.js"></script>
+  <script src="../../node_modules/angular-animate/angular-animate.js"></script>
+  <script src="../../node_modules/angular-messages/angular-messages.js"></script>
+  <script src="../../node_modules/angular-material/angular-material.js"></script>
+
+<script type="text/javascript">
+  // Constants
+
+
+		angular.module('app', [])
+			.controller('ctrl', function($scope) {
+			
+				// $scope.specs = {
+				$scope.REM_FONT_SIZE = parseFloat(getComputedStyle(document.documentElement).fontSize);
+				// Size of browser viewport.
+				$scope.BROWSER_VIEWPORT_HEIGHT = $(window).height();
+				$scope.BROWSER_VIEWPORT_WIDTH = $(window).width();
+
+				// Size of HTML document (same as pageHeight/pageWidth in screenshot).
+				$scope.DOCUMENT_HEIGHT = $(document).height();
+				$scope.DOCUMENT_WIDTH = $(document).width();
+				// }
+
+			});
+
+</script>
+
+</head>
+<body ontouchstart="">
+
+	<div>
+		<label>REM_FONT_SIZE</label>
+		<label>{{REM_FONT_SIZE}}</label>
+		<label>BROWSER_VIEWPORT_HEIGHT</label>
+		<label>{{BROWSER_VIEWPORT_HEIGHT}}</label>
+		<label>BROWSER_VIEWPORT_WIDTH</label>
+		<label>{{BROWSER_VIEWPORT_WIDTH}}</label>
+		<label>DOCUMENT_HEIGHT</label>
+		<label>{{DOCUMENT_HEIGHT}}</label>
+		<label>DOCUMENT_WIDTH</label>
+		<label>{{DOCUMENT_WIDTH}}</label>
+	</div>
+
+
+</body>
+</html>
