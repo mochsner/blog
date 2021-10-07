@@ -55,7 +55,7 @@ This website/blog is based on Jekyll!
 - (OPTIONAL) Run sass/scss compiler
 
     ```cli
-    sass --watch css/
+    sass --watch style/
     ```
 
 - (OPTIONAL) Run Rake / Unit Tests
