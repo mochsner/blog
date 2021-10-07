@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Get your browser settings!</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta charset="utf-8">
+
+  <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+
+  <script src="../../node_modules/angular/angular.js"></script>
+  <script src="../../node_modules/angular-aria/angular-aria.js"></script>
+  <script src="../../node_modules/angular-animate/angular-animate.js"></script>
+  <script src="../../node_modules/angular-messages/angular-messages.js"></script>
+  <script src="../../node_modules/angular-material/angular-material.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+
+<script type="text/javascript">
+'use strict';
+  // Constants
+	function getRemSizeInPixels(rem) {    
+    return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+}
+
+		angular.module('app', [])
+			.controller('ctrl', function($scope, $window, $document) {
+			
+
+				// $scope.specs = {
+				// Size of browser viewport.
+				$scope.REM_FONT_SIZE = getRemSizeInPixels(1);
+				$scope.BROWSER_VIEWPORT_HEIGHT = $(window).height();
+				$scope.BROWSER_VIEWPORT_WIDTH = $(window).width();
+
+				// Size of HTML document (same as pageHeight/pageWidth in screenshot).
+				$scope.DOCUMENT_HEIGHT = $(document).height();
+				$scope.DOCUMENT_WIDTH = $(document).width();
+				// }
+
+			})
+			.directive('browserInfo', ['$window', function($window) {
+				
+				return {
+						link: link,
+						restrict: 'E',
+						template: 
+						'<h1>BROWSER-INFO DIRECTIVE</h1><div>window innerWidth: {{innerWidth}}px</div><div>window width: {{width}}</div><div>window height: {{height}}px</div><div>window scale: {{scale}} px in REM</div>'
+				};
+
+				function link(scope, element, attrs){
+					scope.innerWidth = $window.innerWidth;
+					scope.width = $(window).width();
+					scope.height = $(window).height();
+					scope.scale = parseFloat(getComputedStyle(document.documentElement).fontSize);
+					
+					angular.element($window).bind('resize', function(){
+						scope.innerWidth = $window.innerWidth;
+
+						scope.height = $(window).height();
+						scope.scale = parseFloat(getComputedStyle(document.documentElement).fontSize);
+						// manuall $digest required as resize event
+						// is outside of angular
+						scope.$digest();
+					});
+				}
+
+			}]);
+
+
+</script>
+
+</head>
+<body ontouchstart="" ng-app="app">
+
+	<div ng-controller="ctrl" style="display:grid; grid-template-columns:1fr 1fr;">
+		<label>REM_FONT_SIZE</label>
+		<input ng-model="REM_FONT_SIZE">
+		<label>BROWSER_VIEWPORT_HEIGHT</label>
+		<input ng-model="BROWSER_VIEWPORT_HEIGHT">
+		<label>BROWSER_VIEWPORT_WIDTH</label>
+		<input ng-model="BROWSER_VIEWPORT_WIDTH">
+		<label>DOCUMENT_HEIGHT</label>
+		<input ng-model="DOCUMENT_HEIGHT">
+		<label>DOCUMENT_WIDTH</label>
+		<input ng-model="DOCUMENT_WIDTH">
+	</div>
+	<browser-info></browser-info>
+
+</body>
+</html>
