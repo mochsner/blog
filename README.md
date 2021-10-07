@@ -1,4 +1,4 @@
-# mochsner.github.io
+# m.ochs.io
 
 This website/blog is based on Jekyll!
 
