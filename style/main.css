@@ -1,6 +1,4 @@
 /* Main.scss */
-@import url(jekyll-pygments-themes/vs.css);
-
 nav ul, footer ul {
   font-family: 'Helvetica', 'Arial', 'Sans-Serif';
   padding: 0px;
@@ -87,6 +85,26 @@ body {
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important; }
+
+/* navbar / menus and such */
+/* _navbar.scss:18 */
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0; }
+  .navbar > .container,
+  .navbar > .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+
+/* _print.scss:100 */
+.navbar {
+  display: none; }
 
 /* syntax highlighting */
 
