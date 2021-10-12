@@ -1,8 +1,8 @@
-# mochsner.github.io
+# m.ochs.io
 
 This website/blog is based on Jekyll!
 
-## Ubuntu OS Setup
+## Ubuntu OS Pre-Requisites
 
 1. Install Ruby `sudo apt install ruby` (or `sudo snap install ruby` for more up-to-date)
 
@@ -27,7 +27,7 @@ This website/blog is based on Jekyll!
     gem install jekyll bundler rake
     ```
 
-5. Install 
+## Build Project
 
 
 6. Install gems using bundler
@@ -55,7 +55,7 @@ This website/blog is based on Jekyll!
 - (OPTIONAL) Run sass/scss compiler
 
     ```cli
-    sass --watch css/
+    sass --watch style/
     ```
 
 - (OPTIONAL) Run Rake / Unit Tests

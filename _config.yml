@@ -13,11 +13,11 @@ exclude:
   - "node_modules/*.md"
 include:
   - "node_modules"
-site_url: https://mochsner.github.io 
+site_url: https://m.ochs.io 
 
 # Blog
-blog_title: Marc Ochsner
-blog_description: Rambles of a software developer
+blog_title: Marc Codes
+blog_description: Rambles of developer
 blog_url: /posts/
 
 # Syntax

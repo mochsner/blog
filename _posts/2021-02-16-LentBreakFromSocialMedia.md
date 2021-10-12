@@ -24,7 +24,7 @@ Ways to contact:
  - Telegram: @mochsner / 8432901198
  - Signal: 8432901198
  - Keybase: https://keybase.io/mochsner
- - Posting at the bottom of the [blog post](https://mochsner.github.io/Lent2021)
+ - Posting at the bottom of the [blog post](https://m.ochs.io/Lent2021)
 
 Signing off,
 Marc

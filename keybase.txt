@@ -4,7 +4,7 @@ https://keybase.io/mochsner
 
 I hereby claim:
 
-  * I am an admin of https://mochsner.github.io
+  * I am an admin of https://m.ochs.io
   * I am mochsner (https://keybase.io/mochsner) on keybase.
   * I have a public key ASBFddyZa-GfeRnpHuL9MYfuLb5eFEcrvb5q9Eh8cdKHlQo
 
@@ -27,7 +27,7 @@ To do so, I am signing this object:
     },
     "service": {
       "entropy": "Y2EJBEQ+eOa4/l5pfQFJAsOZ",
-      "hostname": "mochsner.github.io",
+      "hostname": "m.ochs.io",
       "protocol": "https:"
     },
     "type": "web_service_binding",
