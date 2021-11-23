@@ -3,6 +3,7 @@ layout: website-frame
 ---
 <!-- This is the primary landing page of the website -->
 <div class="posts">
+  <!-- 
   <h1>Latest Post</h1>
   {% for post in site.posts limit:1 %}
     {% unless post.categories[0] == 'social' or post.layout == 'secret' %}
@@ -20,10 +21,12 @@ layout: website-frame
 
     </article>
     {% endunless %}
-  {% endfor %}
+  {% endfor %} 
+IF THIS IS ENABLED => add offset:1 to below for loop
+-->
 
   <h1>Recent Posts</h1>
-  {% for post in site.posts offset:1 limit:5 %}
+  {% for post in site.posts limit:5 %}
     {% unless post.categories[0] == 'social' or post.layout == 'secret' %}
           {% include post_preview.html %}
     {% endunless %}
