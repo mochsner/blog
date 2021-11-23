@@ -10,7 +10,7 @@
         {% unless category == "social" %}
           <span class="tag">
               <a href="/category/{{ category }}">#{{ category }}</a>
-              <a href="{{ post.url }}#disqus_thread"></a>
+              [<a href="{{ post.url }}#disqus_thread">Comment</a>]
 
           </span>
           {% endunless %}
