@@ -5,15 +5,16 @@
     {% include read-time.html content=post.content %}
     <span class="tags">
       »
+      <a href="{{ post.url }}#disqus_thread">Discuss</a>
+      »
       {% assign sortedCategories = post.categories | sort %}
-      {% for category in sortedCategories | limit: 3 %}
+      {% for category in sortedCategories | limit: 2 %}
         {% unless category == "social" %}
           <span class="tag">
               <a href="/category/{{ category }}">#{{ category }}</a>
           </span>
           {% endunless %}
       {% endfor %}
-      (<a href="{{ post.url }}#disqus_thread">Discuss</a>)
 
     </span> 
 </li>
