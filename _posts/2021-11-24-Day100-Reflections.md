@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "#100DaysOfCode - Day 101: Reflections on #100DaysOfCode"
+title: "#100DaysOfCode - Reflections on #100DaysOfCode"
 date: 2021-11-24
 permalink: /100Days/:slug
 share:
