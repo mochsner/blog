@@ -10,6 +10,8 @@
         {% unless category == "social" %}
           <span class="tag">
               <a href="/category/{{ category }}">#{{ category }}</a>
+              <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"></a>
+
           </span>
           {% endunless %}
       {% endfor %}

@@ -15,6 +15,8 @@ include:
   - "node_modules"
 site_url: https://m.ochs.io 
 
+disqus_shortname: mochsner
+
 # Blog
 blog_title: Marc Codes
 blog_description: Rambles of developer
