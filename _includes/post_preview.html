@@ -3,11 +3,16 @@
     <h3>
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
-        {% include read-time.html content=post.content %}
       </a>
-      <a href="{{ post.url }}#disqus_thread">
-        Comment
-      </a>
+      <span>
+        (
+          {% include read-time.html content=post.content %}, 
+        <a href="{{ post.url }}#disqus_thread">
+          Add a Comment
+        </a>
+        )
+      </span>
+
     </h3>
 
     <div class="entry">
