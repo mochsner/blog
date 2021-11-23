@@ -1,19 +1,11 @@
   <article class="post">
 
-    <h3>
+    <h4>
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
-      <span>
-        (
-          {% include read-time.html content=post.content %}, 
-        <a href="{{ post.url }}#disqus_thread">
-          Add a Comment
-        </a>
-        )
-      </span>
-
-    </h3>
+      <span>| {% include read-time.html content=post.content %} | <a href="{{ post.url }}#disqus_thread">Add a Comment</a></span>
+    </h4>
 
     <div class="entry">
       {% if post.excerpt_separator %}{{ post.excerpt }}{% else %}{{ post.content | truncatewords:100 }}{% endif %}
