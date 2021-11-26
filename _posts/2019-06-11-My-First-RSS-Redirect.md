@@ -7,5 +7,6 @@ categories:
   - blog
   - internet
   - code
+  - general
 ---
 This is my first RSS feed redirect!

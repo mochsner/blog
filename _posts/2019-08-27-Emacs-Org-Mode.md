@@ -5,6 +5,7 @@ date: 2019-08-27
 categories: 
   - organization
   - notes
+  - general
 ---
 
 <p> Recently, I've been working a lot on my organization strategies. My office mate has been very helpful in getting me the right documentation, but I'll admit that organization is still something I struggle with. In System Administration, it can become a tough balance of not knowing when to write something down vs just doing the task. There's a trade-off of lost time to write something down versus the lost time taken to drop whatever you're doing to refocus on the new task, then spend the time switching back to the previous task after</p>
