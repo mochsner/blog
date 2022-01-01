@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "_posts/2021-09-20-0001.md",
+            "file": "_posts/fb-as-a-tool.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2021-09-20-0001.md",
+                "file": "_posts/fb-as-a-tool.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,15 +87,15 @@
   },
   "active": "2a3391aafabb1fd0",
   "lastOpenFiles": [
+    "_posts/fb-as-a-tool.md",
+    "_posts/2021-10-29-De-facebook copy.md",
+    "_posts/2021-10-07-Day99.md",
+    "_posts/2021-10-29-Day100.md",
+    "_posts/2021-10-29-De-facebook.md",
     "_posts/2021-09-20-0001.md",
     "_posts/2021-08-13-Day96.md",
     "_posts/2021-08-13-1531.md",
     "_posts/2021-08-11-Day95.md",
-    "_posts/2021-08-11-0122.md",
-    "_posts/2021-07-25-Day94.md",
-    "_posts/2021-04-17-Day93.md",
-    "_drafts/2021-01-23-Day84.md",
-    "_drafts/2021-03-13-Day92-async.md",
-    "_templates/default.md.md"
+    "_posts/2021-08-11-0122.md"
   ]
 }
