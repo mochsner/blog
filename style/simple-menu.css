@@ -6,36 +6,33 @@ body {
   font-family: 'Fira Sans', sans-serif;
   margin: 0; }
 
-a {
-  color: white;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-decoration: none;
-  background: #ee0d0d;
-  padding: 20px 5px;
-  display: inline-block;
-  width: 100%;
-  text-align: center; }
-
-a:hover {
-  background: rgba(238, 13, 13, 0.75); }
-
 .main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 3em 1.5em; }
+  .main .navigation ul {
+    border: 1px solid red;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+  .main .navigation li {
+    flex: 3; }
+    .main .navigation li a {
+      color: white;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-decoration: none;
+      background: #ee0d0d;
+      padding: 20px 5px;
+      display: inline-block;
+      width: 100%;
+      text-align: center; }
+    .main .navigation li a:hover {
+      background: rgba(238, 13, 13, 0.75); }
+  .main .navigation .user {
+    flex: 1; }
 
-.navigation ul {
-  border: 1px solid #d41414;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex; }
-
-.navigation li {
-  flex: 3; }
-
-.navigation .user {
-  flex: 1; }
+/*# sourceMappingURL=simple-menu.css.map */
 
 /*# sourceMappingURL=simple-menu.css.map */
