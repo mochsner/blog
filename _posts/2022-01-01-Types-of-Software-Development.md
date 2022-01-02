@@ -151,7 +151,7 @@ When I first started, I'd watch videos fully through and see everything I could 
 
 So, if you're watching videos on [Youtube](https://youtube.com), or reading through Tutorials on [Tutorials Point](https://tutorialspoint.com), try to make sure you're poking around at it. If you have an interactive prompt that you can try different values and play with the logic to see how it changes, you'll remember it better. If you have the files then to reference back to later, even better. So try to do both of those things more and more over time (at the VERY beginning, this feels like a chore... I get it)
 
-With that in mind, reading things online and replicating it on a page like that is useful, and videos are useful. 
+With that in mind, reading things online and replicating it on a page they create for you to run it interactively is useful for being able to poke around with it, but videos are also very useful because the person talking gets to sometimes get to the 'why' behind things more. 
 
 - Tutorials tend to be more boring, but they're fantastic for references (like [w3schools](https://w3schools.com) or [Tutorials Point](https://tutorialspoint.com)). While the code for these sites tends to not always be the most up-to-date or 'best practice', they're a great place to start and familiarize yourself with some of the syntax for any particular technology, before diving into any deeper tutorial. You might have some more gaps in your knowledge, but that's okay. The reference back part is nice.
 
