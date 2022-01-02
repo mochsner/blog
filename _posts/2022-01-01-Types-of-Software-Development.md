@@ -114,7 +114,8 @@ OR, you can extend within the same "Value" element, by just adding another eleme
 
 A better example is the car illustration:
 ```js
-1 : {
+{
+  "ID": 1,
   "Make": "Chevrolet",
   "Model" : "Suburban",
   "Year" : 1995,
