@@ -11,7 +11,7 @@ Hi!
 
 Today I'm writing about the different types of software development, since something I myself might benefit from writing out (I'm better at writing things out than talking about them verbally). The software world is a rapidly shifting industry, and everywhere you read, you only get a little bit of the overall picture. I can't write anything all encompassing, but I hope to be able to help paint that picture about how the industry of software development works, and who's involved in it.
 
-### Quick Tangent on Software Development Roles
+## Quick Tangent on Software Development Roles
 Custom and extensible software is embedded in so many industries and profession types today, so the job descriptions for "developers"  you read about aren't even necessarily fully encompassing. There are plenty of non-typical professionals who still use, and develop software in their profession.
 
 For example:
@@ -29,28 +29,32 @@ For these roles, whether a development language works directly with the program 
 
 The strenghths offered by analysts, administrators, and other roles who understand how everything is extensible, is being more and more realized, making companies much more efficient. 
 
-### Types of Development
+## Types of Development
 
 ---
-#### 1. Web Design
-Web designers typically work with the more creative and visual side of web applications. Whether there's logic behind the scenes or not does not concern a web designer - they focus on the HTML (Hypertext Markup), it's Styling (CSS or SCSS), and maaaaybe a little bit of JavaScript to help apply styles, and load elements into the page in a way that doesn't skew the formatting.
+### 1. Web Design
+Web designers typically work with the more creative and visual side of web applications, and might have a background in graphic design. Whether there's more technical logic behind the scenes or not does not concern a web designer - they focus on the HTML (Hypertext Markup), it's Styling (CSS or SCSS), and maaaaybe a little bit of JavaScript to help apply styles, then load elements into the page in a way that doesn't skew the formatting. The focus of the designer is to make things look nice. 
+
+A good designer will understand the logical code behind the scenes, which branches more into frontend development, but there's some who just do the design at big companies, and don't understand much about the business logic.
 
 Technologies:
 - 45% HTML
-- 45% CSS/SCSS/LESS/Stylus
-- 10% Javascript (?)
+- 45% CSS (or SCSS or something that a Javascript framework somewhat manages for you)
+- 10% Javascript (or Typescript)
 
-#### 2. Frontend Development
-Frontend developers work on the part of the product with which the user interacts. They are primarily concerned with the user interface (UI), but also extend into working with the logic. For example, they might create the layout, visual aspects, and interactive elements of a website or app. However, their role isn’t identical to that of a UI or user experience (UX) designer. They also fix bugs and make certain that the UI can run on different browsers.
+### 2. Frontend Development
+Frontend developers work on the part of the product with which the user interacts, but have a bit more knowledge of the business logic of the app. Still, they are primarily concerned with the user interface (UI). For example, they might create the layout, visual aspects, and interactive elements of a website or app. However, their role isn’t identical to that of a UI or user experience (UX) designer. They also fix bugs and make certain that the UI can run on different browsers.
 
 They must be highly proficient in programming and work closely with the backend developers to ensure that the two aspects of the product function cohesively. 
 
+Front-end development is a rapidly changing field, particularly due to the use of Javascript to try to get fancy with things, so front-end devs are often learning different Javascript frameworks (e.g. AngularJS, Angular2+, ReactJS, VueJS, Vue3+, etc.) to make writing Javascript logic easier, and handle different browser incompatibilities for them. JavaScript has been around for decades, and boasts backwards compatibility (all browsers must still treat javascript rules from, say, the 90s), so writing JavaScript can sometimes be a bit counterintuitive. For this reason, learning programming logic from Javascript (as opposed to a backend language) can be a bit difficult at times. Learning JavaScript via a Typescript framework, something some of the Javascript frameworks use (like Angular2+), might make it a bit less of a headache. 
+
 Technologies:
 - 40% HTML
-- 20% CSS
-- 40% Javascript
+- 20% CSS (or SCSS, compiled CSS with fancier rules)
+- 40% Javascript (or Typescript/JavaScript Frameworks)
  
-#### 3. Backend Development
+### 3. Backend Development
 In contrast, a backend developer works with the part of the product users can’t see — the back end. This professional builds the infrastructure that powers the website, app, or program, focusing on functionality, integration of systems, and core logic. They will also deal with the complex, underlying structure, ensuring strong performance, scalability, and security.
 
 As we mentioned above, the frontend and backend developers work closely together to create a final product.
@@ -62,46 +66,69 @@ Examples of Technology stacks (offered by different proprietary or free companie
  
 These developers tend to not only work on server logic to handle requests coming in from mobile and web applications, but also for logic as it talks to the database. Databases are very heavy programs that are designed to optimally retrieve huge amounts of data from a disk, and the logic for queries is typically abstracted away to programmers.
 
-#### 4. Database Development
+### 4. Database Development
 Adatabase developer is responsible for building the database, modifying and designing existing or new programs, and ensuring that they satisfy the requirements of the users whilst maintaining good performance and organization. Databases do not handle renaming as well as programming languages do, so there's a lot of design decisions that are important to maintain -- a bad name of something in a database could cause a lot of headache. Sometimes, the roles of database administrator and developer do overlap (as mentioned above), but this depends on the needs of the client or employer.
 
 Examples of a databases that a database developer might use:
 
-- Microsoft SQL Server (structured tables look like an Excel table of values)
+- SQL
+  Example: Microsoft SQL Server
+  - structured tables
+  - Similar to an Excel table of values, where the header row defines how EVERY object looks exactly. A change to the design of one item/row's "shape" is a change to ALL of the rows.
 
 | ID | Value | ExtraValue
 | - | - | - |
 | 1 | something | |
 | 2 | 2nd something | 2nd expanded |
 
-- PostgreSQL (unstructured tables - can nest values inside other values. Similar to JSON format)
-```Hl7
-# Not nested
-1
- \
-  something
-  |
-  expanded
-2
- \
-  2nd something
-  | 
-  2nd expanded
 
-# Nested
-1
- \
-  something
-  \
-   expanded
-2
- \
-  2nd something
-  \ 
-   2nd expanded
+- NoSQL 
+  Example: PostreSQL
+  - unstructured tables. 
+  - More associated to Object-Oriented Design. Where an item/row/object might represent an instance of a car (such as Marc's Green 1995 Chevy Suburban growing up), and the car has a wheel with it's own nested properties, like having a rim made of aluminum. 
+
+```json
+# In "NoSQL" we can add another associated named value.
+1 : {
+  "Value" : "something",
+  "ExtraValue" : ""
+},
+2 : {
+  "Value" : "2nd something",
+  "ExtraValue" : "2nd expanded"
+}
+
+# OR, you can extend within the same "Value" element, by just adding another element to the same object.
+1 : {
+  "Value" : ["something"]
+},
+2 : {
+  "Value" : ["2nd something", "2nd expanded"]
+}
 ```
 
-#### Other: Combination of the above
+A better example is the car illustration:
+```json
+1 : {
+  "Make": "Chevrolet",
+  "Model" : "Suburban",
+  "Year" : 1995,
+  "Wheels": {
+    "Rims": {
+      "Manufacturer" : "Wheel Co",
+      "Metals Used" : ["Aluminum", "Iron", "Copper"],
+    },
+    "Tires" : {
+      "Manufacturer" : "Continental Tire",
+      "Height" : 30,
+      "HeightUnit" : "cm"
+    }
+  }
+}
+
+```
+
+### Other: Combination of the above
 Lastly, a full-stack developer might consists of a combination of all these. They typically work for smaller companies, or for smaller products within larger companies, and have had enough experience in various areas that they fill whatever niche is in most demand in a given moment. 
 
 Advantages to being a full stack developer:
@@ -116,7 +143,7 @@ Disadvantages:
 - Master of none
 
 
-### Learning Tools
+## Learning Notes
 
 There's various ways to learn development, and everywhere you read is going to be talking about getting hands on with it. And it's totally true. 
 
@@ -132,12 +159,12 @@ With that in mind, reading things online and replicating it on a page like that 
 
   - For videos, the best ones will give you a [Github](https://github.com) link to clone or download you code from, such as this [link that links to my blog you can clone](https://github.com/mochsner/mochsner.github.io). I HIGHLY RECOMMEND CREATING AN ACCOUNT ON GITHUB. On the repository, you can fork that project they gave you. Then, you can clone your project locally (or change the domain extension from `.dev` to `.com`), make your changes, commit your changes with a comment, and go back in time to see how you changed the code over time. This process is called version control, and it is a life saver when you're lost in code.
 
-#### Running Code Locally
+### Running Code Locally
 
 At some point, when you're learning to code, you're going to have to start running code locally. You can get away from this for a while, but it's best to get familiar with it earlier than later. The defacto editor for web development nowadays seems to be [VS Code](https://code.visualstudio.com/learn/) - it's free, and has a great plugin ecosystem that allows you to get great syntax highlighting, and even compilers for styling. It's great on Windows, Mac, and Linux.
 
 
-#### Web Development: Chrome Dev Tools
+### Web Development: Chrome Dev Tools
 
 If you're doing web development, use Chrome. I don't care what computer you have. I've been in web development for a while, and due to philosophical reasons I'm anti-google for pretty much everything nowadays (Firefox or Iceraven are my preferred approach). BUT, I use Chrome. It'll save you some headache. Firefox is slow, and Safari is glitchy. The new Edge and Brave browsers run on Chrome, so you can use those if you prefer, but Chrome Dev tools are pretty great. (Ctrl + Shift + I)
 
