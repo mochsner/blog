@@ -32,7 +32,7 @@ The strenghths offered by analysts, administrators, and other roles who understa
 ### Types of Development
 
 ---
-1. Web Design
+#### 1. Web Design
 Web designers typically work with the more creative and visual side of web applications. Whether there's logic behind the scenes or not does not concern a web designer - they focus on the HTML (Hypertext Markup), it's Styling (CSS or SCSS), and maaaaybe a little bit of JavaScript to help apply styles, and load elements into the page in a way that doesn't skew the formatting.
 
 Technologies:
@@ -40,7 +40,7 @@ Technologies:
 - 45% CSS/SCSS/LESS/Stylus
 - 10% Javascript (?)
 
-2. Frontend Development
+#### 2. Frontend Development
 Frontend developers work on the part of the product with which the user interacts. They are primarily concerned with the user interface (UI), but also extend into working with the logic. For example, they might create the layout, visual aspects, and interactive elements of a website or app. However, their role isn’t identical to that of a UI or user experience (UX) designer. They also fix bugs and make certain that the UI can run on different browsers.
 
 They must be highly proficient in programming and work closely with the backend developers to ensure that the two aspects of the product function cohesively. 
@@ -50,7 +50,7 @@ Technologies:
 - 20% CSS
 - 40% Javascript
  
-3. Backend Development
+#### 3. Backend Development
 In contrast, a backend developer works with the part of the product users can’t see — the back end. This professional builds the infrastructure that powers the website, app, or program, focusing on functionality, integration of systems, and core logic. They will also deal with the complex, underlying structure, ensuring strong performance, scalability, and security.
 
 As we mentioned above, the frontend and backend developers work closely together to create a final product.
@@ -62,7 +62,7 @@ Examples of Technology stacks (offered by different proprietary or free companie
  
 These developers tend to not only work on server logic to handle requests coming in from mobile and web applications, but also for logic as it talks to the database. Databases are very heavy programs that are designed to optimally retrieve huge amounts of data from a disk, and the logic for queries is typically abstracted away to programmers.
 
-4. Database Development
+#### 4. Database Development
 Adatabase developer is responsible for building the database, modifying and designing existing or new programs, and ensuring that they satisfy the requirements of the users whilst maintaining good performance and organization. Databases do not handle renaming as well as programming languages do, so there's a lot of design decisions that are important to maintain -- a bad name of something in a database could cause a lot of headache. Sometimes, the roles of database administrator and developer do overlap (as mentioned above), but this depends on the needs of the client or employer.
 
 Examples of a databases that a database developer might use:
@@ -101,7 +101,7 @@ Examples of a databases that a database developer might use:
    2nd expanded
 ```
 
-
+#### Other: Combination of the above
 Lastly, a full-stack developer might consists of a combination of all these. They typically work for smaller companies, or for smaller products within larger companies, and have had enough experience in various areas that they fill whatever niche is in most demand in a given moment. 
 
 Advantages to being a full stack developer:
