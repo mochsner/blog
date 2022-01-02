@@ -16,14 +16,14 @@ Custom and extensible software is embedded in so many industries and profession 
 
 For example:
 
-1. A systems administrator at your school might do some software development (or "scripting" when it's more single task oriented), and I'd consider them to be developers of a sort. They automate many tasks that are generally systems related
+1. A *systems administrator* at your school might do some software development (or "scripting" when it's more single task oriented), and I'd consider them to be developers of a sort. They automate many tasks that are generally systems related
 
-2. An analyst can do a variety of things with knowing how different types of programs they use work (i.e. RStudio, Tableau, Excel, Epic, etc), but eventually, they might need to extend beyond the core functions of the program or medium they're working in. If that's in Excel, they'd use Microsoft's language called Visual Basic for Applications, or something more cross-platform like Python (since Excel doesn't run on Linux, and it's not fully extensible on Mac) to hook into Excel and do some custom processing on the data. 
+2. An *analyst* can do a variety of things with knowing how different types of programs they use work (i.e. RStudio, Tableau, Excel, Epic, etc), but eventually, they might need to extend beyond the core functions of the program or medium they're working in. If that's in Excel, they'd use Microsoft's language called Visual Basic for Applications, or something more cross-platform like Python (since Excel doesn't run on Linux, and it's not fully extensible on Mac) to hook into Excel and do some custom processing on the data. 
 
 For these roles, whether a development language works directly with the program (as is the case with Python hooking into Excel files), or they need some intermediary format to work with data, there's always a way to do it - some are just better than others. Here are some popular formats to help extend things from programs into something more custom development capable:
 
-- Comma separated value files
-- JSON (formatted files)
+- [Comma separated value (CSV)](https://www.howtogeek.com/348960/what-is-a-csv-file-and-how-do-i-open-it/) files
+- JSON 
 - SQL
 - XML (like JSON but older)
 
@@ -83,32 +83,37 @@ Examples of a databases that a database developer might use:
 
 
 - NoSQL 
-  Example: PostreSQL
-  - unstructured tables. 
+  Example: [MongoDB](https://www.tutorialspoint.com/mongodb/mongodb_overview.htm)
+  - Unstructured tables. 
   - More associated to Object-Oriented Design. Where an item/row/object might represent an instance of a car (such as Marc's Green 1995 Chevy Suburban growing up), and the car has a wheel with it's own nested properties, like having a rim made of aluminum. 
 
-```json
-# In "NoSQL" we can add another associated named value.
-1 : {
-  "Value" : "something",
-  "ExtraValue" : ""
+In "NoSQL" we can add another associated named value.
+```js
+{
+  'ID' : 1,  
+  'Value' : 'something',
+  'ExtraValue' : ''
 },
-2 : {
-  "Value" : "2nd something",
-  "ExtraValue" : "2nd expanded"
+{
+  'ID' : 2,  
+  'Value' : '2nd something',
+  'ExtraValue' : '2nd expanded'
 }
+```
 
-# OR, you can extend within the same "Value" element, by just adding another element to the same object.
-1 : {
-  "Value" : ["something"]
+OR, you can extend within the same "Value" element, by just adding another element to the same object.
+```js
+{
+  'ID' : 1,  
+  'Value' : 'something'
 },
-2 : {
-  "Value" : ["2nd something", "2nd expanded"]
+{
+  'Value' : ['2nd something', '2nd expanded']
 }
 ```
 
 A better example is the car illustration:
-```json
+```js
 1 : {
   "Make": "Chevrolet",
   "Model" : "Suburban",
