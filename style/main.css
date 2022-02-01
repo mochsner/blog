@@ -1,4 +1,5 @@
 /* Main.scss */
+@import url(jekyll-pygments-themes/monokai.css);
 nav ul, footer ul {
   font-family: 'Helvetica', 'Arial', 'Sans-Serif';
   padding: 0px;
@@ -78,33 +79,8 @@ body {
       font-size: 2em; } }
 
 /* menu.scss */
-.navBardemoBasicUsage md-content .ext-content {
-  padding: 50px;
-  margin: 20px;
-  background-color: #FFF2E0; }
-
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-  display: none !important; }
-
-/* navbar / menus and such */
-/* _navbar.scss:18 */
-.navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 0; }
-  .navbar > .container,
-  .navbar > .container-fluid {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between; }
-
-/* _print.scss:100 */
-.navbar {
-  display: none; }
+.collapse.show {
+  display: inline-block; }
 
 /* syntax highlighting */
 

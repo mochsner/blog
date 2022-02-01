@@ -1,5 +1,6 @@
 ---
 layout: website-frame
+comments: true
 ---
 <article class="post">
   <h1>{{ page.title }}</h1>
@@ -30,7 +31,7 @@ layout: website-frame
   {% else %}
   <div class="page-item disabled flex-fill" style="flex: 1 1 0;">
     <a class="page-link" style="text-align:left; height:100%;" href="#">&laquo; Previous</a>
-  </li>
+  </div>
   {% endif %}
   
   {% if next_post %}
@@ -60,6 +61,7 @@ layout: website-frame
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
+  
 
   {% include disqus.html %}
 </article>

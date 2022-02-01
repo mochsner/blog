@@ -5,6 +5,7 @@ date: 2019-05-21
 categories: 
   - books
   - devops
+  - general
 ---
 
 Finally finished "The Pheonix Project" a little over a week ago. Although I haven't read much this year with a customer go-live in April, it was definitely the best book I've read in a while. For comparison, the other books I've read recently consist of the Martian, Ready Player One... so maybe I just needed something a bit more technology-focused...

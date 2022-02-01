@@ -4,6 +4,7 @@ title: "Welcome to my Blog"
 date: 2019-04-27
 categories: 
   - blog
+  - general
 ---
 
 After creating a personal blog (<a href="https://tuurtell.com">tuurtell</a>) with my best friend, I've decided to go forward with taking the time to create this site to blog about some of the things I'm interested in through my career or personal hobbies! {% octicon smiley size:large class:"right left" aria-label:hi %}

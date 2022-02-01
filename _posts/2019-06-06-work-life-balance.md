@@ -5,6 +5,7 @@ date: 2019-06-06
 share: twitter
 categories: 
   - work
+  - general
 ---
 <p>I had an upgrade for a customer this past Tuesday, and since that upgrade there's really been a lot of things I'm excited to get involved with at work in terms of development. One great thing about working at a software company is that there's plenty of room for work to be done & improvement to be made. Whether it's development, process automation, improving monitoring/visibility, training... there's plenty of great and fun projects to get involved with where one feels like they're making an impact on the company long-term & making life easier for our coworkers. From people I've spoken with in the industry, it makes a lot of sense to get involved with these things, but it's also very important to make sure we're handling a reasonable workload to maintain a <strike>work/life</strike> <strong>life/work</strong> balance.</p>
 
