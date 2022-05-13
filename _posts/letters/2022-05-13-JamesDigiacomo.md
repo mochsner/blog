@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: post-hidden
 title: "From Marc about James DiGiacomo"
 date: 2022-05-13
-permalink: /Letters/:slug
-categories: [Letters]
+permalink: /letters/:slug
+categories: [letters]
 ---
 
 To whom it may concern regarding James DiGiacomo,

@@ -1,5 +1,5 @@
 ---
-layout: secret
+layout: post-hidden
 title: "Lent 2021 - Social Media Cleanse"
 date: 2021-02-16
 permalink: /Lent2021

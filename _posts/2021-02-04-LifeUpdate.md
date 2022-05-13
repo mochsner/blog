@@ -1,5 +1,5 @@
 ---
-layout: secret
+layout: post-hidden
 title: "#LifeUpdate - Welcome to the World, Adora!"
 date: 2021-02-04
 categories:
