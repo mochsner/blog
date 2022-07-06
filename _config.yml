@@ -13,7 +13,7 @@ exclude:
   - "node_modules/*.md"
 include:
   - "node_modules"
-site_url: https://m.ochs.io 
+site_url: https://mochsner.github.io/blog 
 
 disqus_shortname: mochsner
 
