@@ -2,7 +2,7 @@
 layout: post-hidden
 title: "Ubuntu Intro"
 date: 2022-10-26
-permalink: /js/UbuntuIntro
+permalink: /js/:slug
 categories: [js]
 ---
 
