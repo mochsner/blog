@@ -99,4 +99,10 @@ I'll try to update this with more information on particular programs that may be
 Then, some topics to cover for future:
 1. Gnome: the UI framework that Ubuntu uses. 
   - This can be used to [install UI extensions](https://extensions.gnome.org/), such as start menus that look more similar to what you're used to.
+2. General seaching tips
+  - Ensure the source is trustworthy, e.g. linuxhint official domain, stackoverflow, etc.)
+  - Guide searches - always check for you particular version of OS. For example "how to install minecraft on ubuntu 20.04" is better than "On ubuntu" or "On linux". 
+    Why? 
+    1. If a 3rd party (e.g. Minecraft) is prioritizing a certain way to maintain and delivery packages, the guide likely takes that into account
+    2. With newer versions of Ubuntu, changes to package managers might make the install process different. For example, you might run `snap install minecraft --classic` instead of `snap install minecraft` or `apt install minecraft` (NOTE: don't run those commands - I'm not sure if they're official or not).
 
