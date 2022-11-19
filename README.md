@@ -1,25 +1,36 @@
-# m.ochs.io
+# mochsner.github.io
 
+#### Posix-compatible script for installing & running all of below individual Steps
+```bash
+if [[ command -v ruby &> /dev/null ]] && [[ command -v bundle &> /dev/null ]]
+then
+    echo "Ruby/gem already installed"
+else
+    echo "Installing Ruby/Bundler first"
+    sudo apt-get install ruby-full build-essential zlib1g-dev -y
+    gem install jekyll bundler rake
+    exit
+fi
+
+```
 This website/blog is based on Jekyll!
 
-## Ubuntu OS Pre-Requisites
+#### Manual Ubuntu OS Pre-Requisites
 
-1. Install Ruby `sudo apt install ruby` (or `sudo snap install ruby` for more up-to-date)
-
-2. Install Jekyll Dependencies (optional)
+1. Install Jekyll Dependencies
 
     ```bash
     sudo apt-get install ruby-full build-essential zlib1g-dev -y
     ```
 
-3. Setup Gem Installation Directory
+<!-- 3. Setup Gem Installation Directory
 
     ```bash
     echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
     echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
     echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
-    ```
+    ``` -->
 
 4. Install Jekyll and Bundler (both used to serve site), then rake for unit testing.
 
