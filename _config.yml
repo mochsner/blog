@@ -1,25 +1,21 @@
 # Tells Jekyll some basics about this project (e.g. telling Jekyll the name of our site and what version of Markdown we'd like to use)
 # Site.<VarName> should reference below values
-title: Mox Devs
+title: mochsner's homepage
 name: marc ochsner
-tagline: christian, husband, father, developer
+tagline: why not read? 
 plugins:
   - jekyll-html-pipeline
   - jekyll-octicons
   - jemoji
 markdown: kramdown
 permalink: /blog/:year/:month/:day
-exclude:
-  - "node_modules/*.md"
-include:
-  - "node_modules"
-site_url: https://mochsner.github.io/blog 
+site_url: https://mochsner.github.io/ 
 
 disqus_shortname: mochsner
 
 # Blog
-blog_title: Marc Codes
-blog_description: Rambles of developer
+blog_title: Marc Ochsner
+blog_description: Just a thought or two.
 blog_url: /posts/
 
 # Syntax

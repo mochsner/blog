@@ -5,3 +5,4 @@ package-lock.json
 *.css.map
 .sass-cache
 _drafts/2021-01-25-DearAdoraMyMistakes.md
+node_modules

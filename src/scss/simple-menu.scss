@@ -1,0 +1,63 @@
+/* GLOBAL STYLES */
+* {
+   box-sizing: border-box; 
+ }
+ 
+ body {
+   font-family: 'Fira Sans', sans-serif;
+   margin: 0; 
+ }
+ 
+
+ 
+ .main {
+   max-width: 1200px;
+   margin: 0 auto;
+  //  padding: 0 3em 1.5em; no idea what this ever did
+ 
+ .navigation {
+   ul {
+    //  border: 1px solid red;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex; 
+   }
+   li {
+     flex: 3; 
+     a {
+      color: white;
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-decoration: none;
+      background: #bd5d38;
+      padding: 10px 10px;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      border-radius:3px; 
+    }
+    
+    a:hover {
+      background: rgba(238, 13, 13, 0.75); 
+    }
+   }
+   .user {
+     flex: 1; 
+   }
+ }
+ 
+}
+nav ul, footer ul {
+  font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+  padding: 0px;
+  list-style: none;
+  font-weight: bold; }
+
+nav ul li, footer ul li {
+  display: inline;
+  // margin-right: 20px; 
+}
+ 
+ /*# sourceMappingURL=simple-menu.css.map */
+ 

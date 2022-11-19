@@ -9,12 +9,20 @@
 		{% include analytics.html %}
 		<title>{{ page.title }}</title>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="shortcut icon" href="/assets/img/shiny-shuckle.ico" type="image/x-icon" />
 		
 		<!-- LINKS TO IDENTITIES ON THE INTERNET -->
-		<link rel="stylesheet" type="text/css" href="/style/simple-menu.css">
+		<!-- <link rel="stylesheet" type="text/css" href="/style/simple-menu.css"> -->
+		<link rel="stylesheet" type="text/css" href="/dist/css/common.min.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/simple-menu.min.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/fonts.min.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/blogpost.min.css">
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 		<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
 		{% include simple-menu.html %}
@@ -46,25 +54,26 @@
 		</div> -->
 
 		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/style/main.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/dist/css/main.min.css">
 
-		<link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+		<!-- <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css"> -->
 
-		<script src="/node_modules/angular/angular.js"></script> 
+		<!-- <script src="/node_modules/angular/angular.js"></script> 
 		<script src="/node_modules/angular-aria/angular-aria.js"></script> 
 		<script src="/node_modules/angular-animate/angular-animate.js"></script> 
 		<script src="/node_modules/angular-messages/angular-messages.js"></script> 
 		<script src="/node_modules/angular-material/angular-material.js"></script> 
 		<script src="https://vitalets.github.io/angular-xeditable/dist/js/xeditable.js"></script>
-		<link rel="stylesheet" href="https://vitalets.github.io/angular-xeditable/dist/css/xeditable.css">
+		<link rel="stylesheet" href="https://vitalets.github.io/angular-xeditable/dist/css/xeditable.css"> -->
 		<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.min.js"></script> -->
 		<!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-		<script src="https://code.angularjs.org/1.8.2/angular-mocks.js"></script>
+		<!-- <script src="https://code.angularjs.org/1.8.2/angular-mocks.js"></script> -->
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
 		<script>
 			var app;
@@ -96,11 +105,12 @@
 		<footer>
 			<ul class="container d-flex flex-row justify-content-between">
 				<li><a href="https://github.com/mochsner"><img src="https://camo.githubusercontent.com/ce26e680a3b81e5c2c818558c4b40908f1d9e11f161143e80d14daa42f1c9773/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f6d6f6368736e65723f6c6162656c3d666f6c6c6f77267374796c653d736f6369616c" alt="GitHub: mochsner" data-canonical-src="https://img.shields.io/github/followers/mochsner?label=follow&amp;style=social" style="max-width:100%;"></a></li>
-				<li><a href="https://twitter.com/moxnr" rel="nofollow"><img src="https://camo.githubusercontent.com/fb200388fb632a009a9a532836391e78ae36fcde9ddb7e519a197026485abf79/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6d6f786e723f7374796c653d736f6369616c" alt="Twitter: moxnt" data-canonical-src="https://img.shields.io/twitter/follow/moxnr?style=social" style="max-width:100%;"></a></li>
+				<li><a href="https://mstdn.social/@mochsner" rel="nofollow"><img src="https://camo.githubusercontent.com/fb200388fb632a009a9a532836391e78ae36fcde9ddb7e519a197026485abf79/68747470733a2f2f696d672e736869656c64732e696f2f747769747465722f666f6c6c6f772f6d6f786e723f7374796c653d736f6369616c" alt="Twitter: moxnt" data-canonical-src="https://img.shields.io/twitter/follow/moxnr?style=social" style="max-width:100%;"></a></li>
 			</ul>
 		</footer>
 
 
+		<script src="/dist/main.js"></script>
 		<script id="dsq-count-scr" src="//{{site.disqus_shortname}}.disqus.com/count.js" async></script>
 	</body>
 </div>
