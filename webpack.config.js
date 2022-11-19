@@ -46,6 +46,7 @@ module.exports =
       __dirname + '/src/scss/blogpost.scss',
       __dirname + '/src/scss/fonts.scss',
       __dirname + '/src/scss/simple-menu.scss',
+      __dirname + '/src/scss/resume.scss',
     ],
     module: {
       rules: [
