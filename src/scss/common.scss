@@ -4,6 +4,8 @@ nav ul, footer ul {
     padding: 0px;
     list-style: none;
     font-weight: bold;
+
+
 }
 nav ul li, footer ul li {
     display: inline;
@@ -28,6 +30,11 @@ p {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;   /* Height of the footer */
+   background: #bd5d38;
 }
 
 ul.posts { 

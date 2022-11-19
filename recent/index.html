@@ -4,10 +4,14 @@ layout: website-frame
 <!-- This is the primary landing page of the website -->
 <div class="posts">
 
+  <hr class="rounded">
+
   <h2>Recent Posts</h2>
+
   {% for post in site.posts limit:5 %}
     {% unless post.categories[0] == 'social' or post.layout == 'post-hidden' %}
-          {% include post_preview.html %}
+    <hr class="rounded">
+    {% include post_preview.html %}
     {% endunless %}
   {% endfor %}
 </div>

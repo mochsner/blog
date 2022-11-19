@@ -1,3 +1,6 @@
+---
+layout: website-frame
+---
 # mochsner.github.io
 
 #### Posix-compatible script for installing & running all of below individual Steps

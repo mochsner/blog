@@ -2,10 +2,13 @@
 layout: website-frame
 title: Marc's Blog posts
 ---
-<h1>{{ page.title }}</h1>
+
+<hr class="solid">
+<h2>{{ page.title }}</h2>
 <ul class="posts">
   {% for post in site.posts %}
     {% unless post.category[0] == "social" %}
+  <hr class="solid">
     {% include single_post_reference_line.html %}
     {% endunless %}
   {% endfor %}
