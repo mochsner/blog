@@ -5,6 +5,9 @@ layout: website-frame
 ---
 
 ### Hi there! 👋
+
+---
+
 Glad to have you join me, I'm Marc, and this is my humble blog / static website. 
 
 Honestly, there's not a whole lot going on here, but it's a little space where I can link out to other things that interest me, or just put some thoughts out there. If you've landed here for professional reasons, checkout my experiences tab.
